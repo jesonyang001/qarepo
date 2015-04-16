@@ -1,0 +1,781 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Minh-Duc Tran <linux87s@gmail.com>, 2013
+# Minh-Duc Tran <linux87s@gmail.com>, 2013
+# gialachoanglong <gialacmail@gmail.com>, 2013
+# Bruce Doan <rgv151@gmail.com>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: askbot\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-01 12:01-0500\n"
+"PO-Revision-Date: 2014-11-01 17:05+0000\n"
+"Last-Translator: evgeny <evgeny.fadeev@gmail.com>\n"
+"Language-Team: Vietnamese (http://www.transifex.com/projects/p/askbot/language/vi/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: media/jquery-openid/jquery.openid.js:81
+#, c-format
+msgid "Are you sure you want to remove your %s login?"
+msgstr "Bạn muốn loại bỏ phương thức đăng nhập từ %s?"
+
+#: media/jquery-openid/jquery.openid.js:98
+msgid "Please add one or more login methods."
+msgstr "Hãy thêm một hoặc vài phương thức đăng nhập khác."
+
+#: media/jquery-openid/jquery.openid.js:101
+msgid ""
+"You don't have a method to log in right now, please add one or more by "
+"clicking any of the icons below."
+msgstr "Hiện tại bạn không có phương thức đăng nhập nào, hãy thêm bằng cách nhấn vào biểu tượng bất kì bên dưới."
+
+#: media/jquery-openid/jquery.openid.js:143
+msgid "passwords do not match"
+msgstr "mật khẩu không khớp"
+
+#: media/jquery-openid/jquery.openid.js:170
+msgid "Show/change current login methods"
+msgstr "Hiển thị/thay đổi các phương thức đăng nhập đang sử dụng"
+
+#: media/jquery-openid/jquery.openid.js:235
+#, c-format
+msgid "Please enter your %s, then proceed"
+msgstr "Hãy nhâp %s của bạn và tiếp tục"
+
+#: media/jquery-openid/jquery.openid.js:237
+msgid "Connect your %(provider_name)s account to %(site)s"
+msgstr "Kết nối với tải khoản %(provider_name)s  của bạn tới %(site)s"
+
+#: media/jquery-openid/jquery.openid.js:331
+#, c-format
+msgid "Change your %s password"
+msgstr "Đổi mật khẩu %s của bạn"
+
+#: media/jquery-openid/jquery.openid.js:332
+msgid "Change password"
+msgstr "Đổi mật khẩu"
+
+#: media/jquery-openid/jquery.openid.js:335
+#, c-format
+msgid "Create a password for %s"
+msgstr "Tạo mật khẩu mới cho %s"
+
+#: media/jquery-openid/jquery.openid.js:336
+msgid "Create password"
+msgstr "Tạo mật khẩu"
+
+#: media/jquery-openid/jquery.openid.js:351
+msgid "Create a password-protected account"
+msgstr "Tạo tài khoản mới"
+
+#: media/js/group_messaging.js:102 media/js/group_messaging.js.c:293
+msgid "required"
+msgstr "bắt buộc"
+
+#: media/js/group_messaging.js:139
+msgid "Your message:"
+msgstr "Thông điệp của bạn:"
+
+#: media/js/group_messaging.js:152
+msgid "send"
+msgstr "gửi"
+
+#: media/js/group_messaging.js:164 media/js/post.js:1970
+#: media/js/post.js.c:3245 media/js/post.js.c:4808 media/js/user.js:841
+msgid "cancel"
+msgstr "hủy"
+
+#: media/js/group_messaging.js:227
+msgid "Reply"
+msgstr "Trả lời"
+
+#: media/js/group_messaging.js:236 media/js/group_messaging.js.c:743
+msgid "message sent"
+msgstr "đã gửi"
+
+#: media/js/group_messaging.js:271
+msgid "user {{str}} does not exist"
+msgid_plural "users {{str}} do not exist"
+msgstr[0] "thành viên {{str}} không tồn tại"
+
+#: media/js/group_messaging.js:278
+msgid "cannot send message to yourself"
+msgstr "không thể gửi tin nhắn đến chính bạn"
+
+#: media/js/group_messaging.js:323
+msgid "Recipient:"
+msgstr "Người nhận:"
+
+#: media/js/live_search.js:198
+msgid "To see search results, 2 or more characters may be required"
+msgstr "Để có kết quả tìm kiếm, vui lòng sử dụng từ khóa dài hơn"
+
+#: media/js/live_search.js:220
+msgid "Ask Your Question"
+msgstr "Đặt câu hỏi"
+
+#: media/js/live_search.js:301
+msgid "Sorry, this tag does not exist"
+msgid_plural "Sorry, these tags do not exist"
+msgstr[0] "Xin lỗi, những thẻ này không tồn tại"
+
+#: media/js/live_search.js:315
+msgid "search or ask your question"
+msgstr "tìm hoặc đặt câu hỏi"
+
+#: media/js/post.js:28
+msgid "loading..."
+msgstr "đang tải..."
+
+#: media/js/post.js:125 media/js/post.js.c:1401
+msgid "tags cannot be empty"
+msgstr "không thể dùng thẻ rỗng"
+
+#: media/js/post.js:131
+msgid "details are required"
+msgstr "thông tin chi tiết là bắt buộc"
+
+#: media/js/post.js:134
+#, c-format
+msgid "details must have > %s character"
+msgid_plural "details must have > %s characters"
+msgstr[0] " chi tiết cần dài hơn %s kí tự"
+
+#: media/js/post.js:142
+msgid "enter your question"
+msgstr "nhập câu hỏi của bạn"
+
+#: media/js/post.js:145
+msgid "%(question)s must have > %(length)s character"
+msgid_plural "%(question)s must have > %(length)s characters"
+msgstr[0] ""
+
+#: media/js/post.js:168
+msgid "content cannot be empty"
+msgstr "nội dung không thể rỗng"
+
+#: media/js/post.js:171
+msgid "%(answer)s must be > %(length)s character"
+msgid_plural "%(answer)s must be > %(length)s characters"
+msgstr[0] ""
+
+#: media/js/post.js:232
+msgid "Back to the question"
+msgstr "Trở về câu hỏi"
+
+#: media/js/post.js:332
+msgid "Merge"
+msgstr ""
+
+#: media/js/post.js:336 media/js/post.js.c:388
+msgid "Load preview"
+msgstr ""
+
+#: media/js/post.js:348
+msgid "messages"
+msgstr ""
+
+#: media/js/post.js:387 media/js/utils.js:1456 media/js/utils.js.c:1948
+msgid "Cancel"
+msgstr "hủy"
+
+#: media/js/post.js:433
+msgid "draft saved..."
+msgstr "đã lưu bản nháp..."
+
+#: media/js/post.js:678
+msgid "insufficient privilege"
+msgstr "không đủ quyền"
+
+#: media/js/post.js:681 media/js/post.js.c:1548
+msgid "please login"
+msgstr "vui lòng đăng nhập"
+
+#: media/js/post.js:684
+msgid "anonymous users cannot %(follow_questions)s"
+msgstr ""
+
+#: media/js/post.js:690
+msgid "anonymous users cannot subscribe to questions"
+msgstr "hãy đăng nhập để đăng ký theo dõi câu hỏi này"
+
+#: media/js/post.js:691 media/js/post.js.c:1558
+msgid "anonymous users cannot vote"
+msgstr "hãy đăng nhập để đánh giá"
+
+#: media/js/post.js:693
+msgid "anonymous users cannot flag offensive posts"
+msgstr "người dùng nặc danh không thể thông báo vi phạm"
+
+#: media/js/post.js:694
+msgid "confirm delete"
+msgstr "xác nhận xóa"
+
+#: media/js/post.js:695
+msgid "anonymous users cannot delete/undelete"
+msgstr "người sử dụng ẩn danh không thể xóa/phục hồi"
+
+#: media/js/post.js:696
+msgid "post recovered"
+msgstr "bài viết đã được khôi phục"
+
+#: media/js/post.js:697
+msgid "post deleted"
+msgstr "đã xóa bài viết"
+
+#: media/js/post.js:932
+msgid "sorry, you cannot %(accept_own_answer)s"
+msgstr ""
+
+#: media/js/post.js:969
+msgid "Follow"
+msgstr "Theo sau"
+
+#: media/js/post.js:978 media/js/post.js.c:987
+#, c-format
+msgid "%s follower"
+msgid_plural "%s followers"
+msgstr[0] "%s người theo"
+
+#: media/js/post.js:983
+msgid "<div>Following</div><div class=\"unfollow\">Unfollow</div>"
+msgstr "<div>Đang theo</div><div class=\"unfollow\">Ngừng theo</div>"
+
+#: media/js/post.js:1039
+msgid "remove flag"
+msgstr "loại bỏ cờ"
+
+#: media/js/post.js:1073 media/js/post.js.c:1102
+msgid "flag offensive"
+msgstr "thông báo vi phạm"
+
+#: media/js/post.js:1128 media/js/post.js.c:1629
+msgid "undelete"
+msgstr "Khôi phục"
+
+#: media/js/post.js:1133 media/js/post.js.c:1633
+msgid "delete"
+msgstr "xóa"
+
+#: media/js/post.js:1350 media/js/post.js.c:1577
+msgid "sorry, something is not right here"
+msgstr "xin lỗi, một cái gì đó không đúng ở đây"
+
+#: media/js/post.js:1808
+msgid "add comment"
+msgstr "Thêm ý kiến"
+
+#: media/js/post.js:1814
+msgid "save comment"
+msgstr "lưu ý kiến"
+
+#: media/js/post.js:1854
+#, c-format
+msgid "enter at least %s characters"
+msgstr "nhập ít nhất %s ký tự"
+
+#: media/js/post.js:1856
+#, c-format
+msgid "enter at least %s more characters"
+msgstr "nhập thêm ít nhất %s kí tự nữa"
+
+#: media/js/post.js:1868
+#, c-format
+msgid "%s characters left"
+msgstr "còn lại %s  ký tự"
+
+#: media/js/post.js:1870
+msgid "maximum comment length reached"
+msgstr ""
+
+#: media/js/post.js:1984
+msgid "minor edit (don't send alerts)"
+msgstr "sửa đổi nhỏ (không gửi thông báo)"
+
+#: media/js/post.js:2016
+msgid "Are you sure you don't want to post this comment?"
+msgstr "Bạn có chắc là bạn không muốn gửi bình luận này?"
+
+#: media/js/post.js:2051 media/js/utils.js:3904 media/js/utils.js.c:4059
+msgid "just now"
+msgstr "chỉ bây giờ"
+
+#: media/js/post.js:2117
+msgid "delete this comment"
+msgstr "xóa ý kiến này"
+
+#: media/js/post.js:2432
+msgid "confirm delete comment"
+msgstr "xác nhận xóa ye kiến này"
+
+#: media/js/post.js:2573
+msgid "please sign in or register to post comments"
+msgstr "vui lòng đăng nhập hoặc đăng ký để gửi ý kiến"
+
+#: media/js/post.js:2724
+msgid "Please enter question title (>10 characters)"
+msgstr "Làm ơn nhập tiêu đề của câu hỏi (>10 ký tự)"
+
+#: media/js/post.js:2776 media/js/post.js.c:4836
+msgid "Sorry, you have only read access"
+msgstr "Xin lỗi, bạn chỉ có quyền xem bài"
+
+#: media/js/post.js:3239 media/js/post.js.c:4079 media/js/post.js.c:4268
+msgid "save"
+msgstr "Lưu"
+
+#: media/js/post.js:3363
+msgid "Enter the logo url or upload an image"
+msgstr "Nhập địa chỉ logo hoặc tải lên một hình ảnh"
+
+#: media/js/post.js:3389
+msgid "Do you really want to remove the image?"
+msgstr "Bạn có thực sự muốn xóa hình này?"
+
+#: media/js/post.js:3505
+msgid "change logo"
+msgstr "đổi logo"
+
+#: media/js/post.js:3506
+msgid "add logo"
+msgstr "thêm logo"
+
+#: media/js/post.js:3654
+#, c-format
+msgid "tag \"%s\" was already added, no need to repeat (press \"escape\" to delete)"
+msgstr "thẻ \"%s\" đã có,  không cần phải thêm vào (nhấn phím \"escape\" để xóa)"
+
+#: media/js/post.js:3663
+#, c-format
+msgid "a maximum of %s tag is allowed"
+msgid_plural "a maximum of %s tags are allowed"
+msgstr[0] "tối đa %s thẻ có thể sử dụng"
+
+#: media/js/post.js:4009
+msgid "Delete category?"
+msgstr "Xóa danh mục?"
+
+#: media/js/post.js:4098 media/js/utils.js:1371
+msgid "edit"
+msgstr "sửa"
+
+#: media/js/post.js:4185
+msgid "category name cannot be empty"
+msgstr "tên danh mục không thể để trống"
+
+#: media/js/post.js:4221
+msgid "already exists at the current level!"
+msgstr "đã tồn tại ở cấp độ hiện tại!"
+
+#: media/js/post.js:4257
+msgid "add category"
+msgstr "thêm thể loại"
+
+#: media/js/post.js:4804
+msgid "save tags"
+msgstr "lưu thẻ đánh dấu"
+
+#: media/js/post.js:4920
+msgid "Group name:"
+msgstr "Tên nhóm:"
+
+#: media/js/post.js:4946
+msgid "Shared with the following users:"
+msgstr "Chia sẻ với người dùng sau đây:"
+
+#: media/js/post.js:4952
+msgid "Shared with the following groups:"
+msgstr "Chia sẻ với các nhóm sau:"
+
+#: media/js/tag_selector.js:14
+msgid "Tag \"<span></span>\" matches:"
+msgstr "Thẻ đánh dấu \"<span></span>\" phù hợp:"
+
+#: media/js/tag_selector.js:84
+#, c-format
+msgid "and %s more, not shown..."
+msgstr "và %s nhiều hơn, không được hiển thị..."
+
+#: media/js/user.js:205
+msgid "Please select at least one item"
+msgstr "Vui lòng chọn ít nhất một mục"
+
+#: media/js/user.js:241
+msgid "Load more items."
+msgstr ""
+
+#: media/js/user.js:386
+msgid "Looks there are some things to fix:"
+msgstr "Có vẻ có một số điều phải sửa chữa:"
+
+#: media/js/user.js:454
+msgid "Please provide description."
+msgstr "Vui lòng cung cấp mô tả."
+
+#: media/js/user.js:457
+msgid "Please provide details."
+msgstr "Vui lòng cung cấp chi tiết."
+
+#: media/js/user.js:544
+msgid "A reason must be selected to delete one."
+msgstr "Phải chọn một lý do để xóa 1."
+
+#: media/js/user.js:661
+msgid "Please <a href=\"%(signin_url)s\">signin</a> to follow %(username)s"
+msgstr "Hãy <a href=\"%(signin_url)s\">tạo tài khoản</a> để theo dõi %(username)s"
+
+#: media/js/user.js:693
+#, c-format
+msgid "unfollow %s"
+msgstr "ngừng theo dõi %s"
+
+#: media/js/user.js:696
+#, c-format
+msgid "following %s"
+msgstr "đang theo dõi %s"
+
+#: media/js/user.js:702
+#, c-format
+msgid "follow %s"
+msgstr "theo dõi %s"
+
+#: media/js/user.js:836
+msgid "add group"
+msgstr "thêm nhóm"
+
+#: media/js/user.js:916
+msgid "add"
+msgstr "thêm"
+
+#: media/js/utils.js:81
+msgid "must be shorter than %(max_chars)s character"
+msgid_plural "must be shorter than %(max_chars)s characters"
+msgstr[0] "cần phải ngắn hơn %(max_chars)s kí tự"
+
+#: media/js/utils.js:149
+msgid "and"
+msgstr "và"
+
+#: media/js/utils.js:167
+msgid "click to close"
+msgstr "đóng"
+
+#: media/js/utils.js:670
+#, c-format
+msgid "page %s"
+msgstr ""
+
+#: media/js/utils.js:1370
+msgid "click to edit this comment"
+msgstr "sửa ý kiến này"
+
+#: media/js/utils.js:1401
+msgid "convert to answer"
+msgstr "chuyển thành câu trả lời"
+
+#: media/js/utils.js:1454
+msgid "Ok"
+msgstr "Đồng ý"
+
+#: media/js/utils.js:1760
+#, c-format
+msgid "Uploaded file: %s"
+msgstr "Đã tải lên tập tin: %s"
+
+#: media/js/utils.js:1775
+msgid "Choose a different image"
+msgstr "Chọn một hình ảnh khác "
+
+#: media/js/utils.js:1777
+msgid "Choose a different file"
+msgstr "Chọn một tập tin khác"
+
+#: media/js/utils.js:1791
+msgid "Oops, looks like we had an error. Sorry."
+msgstr "Rất tiếc, có vẻ như chúng tôi đã có một lỗi. Xin lôi."
+
+#: media/js/utils.js:1852
+msgid "Choose an image to insert"
+msgstr "Chọn hình để chèn vào"
+
+#: media/js/utils.js:1854
+msgid "Choose a file to insert"
+msgstr "Chọn tập tin để chèn vào"
+
+#: media/js/utils.js:1867
+msgid "Allowed file types are:"
+msgstr "Các loại tập tin cho phép là:"
+
+#: media/js/utils.js:1873
+#: media/js/tinymce/plugins/askbot_attachment/editor_plugin.js:35
+msgid "Or paste file url here"
+msgstr "Hoặc dán url tập tin ở đây"
+
+#: media/js/utils.js:1947
+msgid "Save"
+msgstr "Lưu"
+
+#: media/js/utils.js:2019
+msgid "saved"
+msgstr "Đã lưu"
+
+#: media/js/utils.js:2143
+msgid "enabled"
+msgstr "đã bật"
+
+#: media/js/utils.js:2145
+msgid "disabled"
+msgstr "bị vô hiệu hóa"
+
+#: media/js/utils.js:2583
+msgid "group name"
+msgstr "tên nhóm"
+
+#: media/js/utils.js:2591
+msgid "add new group"
+msgstr "thêm nhóm mới"
+
+#: media/js/utils.js:2683
+msgid "Group %(name)s already exists. Group names are case-insensitive."
+msgstr "Nhóm %(name)s đã tồn tại. Tên nhóm có phân biệt dạng chữ"
+
+#: media/js/utils.js:2856
+#, c-format
+msgid "see questions tagged '%s'"
+msgstr "xem các câu hỏi được gắn thẻ '%s'"
+
+#: media/js/utils.js:3902
+msgid "ago"
+msgstr "trước"
+
+#: media/js/utils.js:3903
+msgid "from now"
+msgstr "từ bây giờ"
+
+#: media/js/utils.js:3905
+msgid "about a minute"
+msgstr "khoảng một phút"
+
+#: media/js/utils.js:3906
+#, c-format
+msgid "%d minutes"
+msgstr "%d phút"
+
+#: media/js/utils.js:3907
+msgid "about an hour"
+msgstr "Khoảng 1 giờ"
+
+#: media/js/utils.js:3908
+#, c-format
+msgid "%d hours"
+msgstr "%d giờ"
+
+#: media/js/utils.js:3909 media/js/utils.js.c:4037
+msgid "yesterday"
+msgstr "ngày hôm qua"
+
+#: media/js/utils.js:3910
+#, c-format
+msgid "%d days"
+msgstr "%d ngày"
+
+#: media/js/utils.js:3911
+msgid "about a month"
+msgstr "khoảng một tháng"
+
+#: media/js/utils.js:3912
+#, c-format
+msgid "%d months"
+msgstr "%d tháng"
+
+#: media/js/utils.js:3913
+msgid "about a year"
+msgstr "khoảng một năm"
+
+#: media/js/utils.js:3914
+#, c-format
+msgid "%d years"
+msgstr "%d năm"
+
+#: media/js/utils.js:4012
+msgid "Jan"
+msgstr "tháng giêng"
+
+#: media/js/utils.js:4013
+msgid "Feb"
+msgstr "tháng 2"
+
+#: media/js/utils.js:4014
+msgid "Mar"
+msgstr "tháng 3"
+
+#: media/js/utils.js:4015
+msgid "Apr"
+msgstr "tháng 4"
+
+#: media/js/utils.js:4016
+msgid "May"
+msgstr "tháng 5"
+
+#: media/js/utils.js:4017
+msgid "Jun"
+msgstr "tháng 6"
+
+#: media/js/utils.js:4018
+msgid "Jul"
+msgstr "tháng 7"
+
+#: media/js/utils.js:4019
+msgid "Aug"
+msgstr "tháng 8"
+
+#: media/js/utils.js:4020
+msgid "Sep"
+msgstr "tháng 9"
+
+#: media/js/utils.js:4021
+msgid "Oct"
+msgstr "tháng 10"
+
+#: media/js/utils.js:4022
+msgid "Nov"
+msgstr "tháng 11"
+
+#: media/js/utils.js:4023
+msgid "Dec"
+msgstr "tháng 12"
+
+#: media/js/utils.js:4035
+msgid "2 days ago"
+msgstr "2 ngày trước"
+
+#: media/js/utils.js:4042
+#, c-format
+msgid "%s hour ago"
+msgid_plural "%s hours ago"
+msgstr[0] "%s giờ trước"
+
+#: media/js/utils.js:4052
+#, c-format
+msgid "%s min ago"
+msgid_plural "%s mins ago"
+msgstr[0] "%s phút trước"
+
+#: media/js/tinymce/plugins/askbot_attachment/editor_plugin.js:71
+msgid "Insert a file"
+msgstr "chèn 1 tập tin"
+
+#: media/js/tinymce/plugins/askbot_imageuploader/editor_plugin.js:70
+msgid "Insert image"
+msgstr "chèn hình"
+
+#: media/js/wmd/wmd.js:31
+msgid "bold"
+msgstr "đậm"
+
+#: media/js/wmd/wmd.js:32
+msgid "italic"
+msgstr "nghiêng"
+
+#: media/js/wmd/wmd.js:33
+msgid "link"
+msgstr "liên hết"
+
+#: media/js/wmd/wmd.js:34
+msgid "quote"
+msgstr "trích dẫn"
+
+#: media/js/wmd/wmd.js:35
+msgid "preformatted text"
+msgstr "nội dung đã được định dạng"
+
+#: media/js/wmd/wmd.js:36
+msgid "image"
+msgstr "hình"
+
+#: media/js/wmd/wmd.js:37
+msgid "attachment"
+msgstr "đính kèm"
+
+#: media/js/wmd/wmd.js:38
+msgid "numbered list"
+msgstr "danh sách số"
+
+#: media/js/wmd/wmd.js:39
+msgid "bulleted list"
+msgstr "danh sách liệt kê"
+
+#: media/js/wmd/wmd.js:40
+msgid "heading"
+msgstr "tiêu đề"
+
+#: media/js/wmd/wmd.js:41
+msgid "horizontal bar"
+msgstr "thanh ngang"
+
+#: media/js/wmd/wmd.js:42
+msgid "undo"
+msgstr "lùi lại"
+
+#: media/js/wmd/wmd.js:43 media/js/wmd/wmd.js.c:1170
+msgid "redo"
+msgstr "làm lại"
+
+#: media/js/wmd/wmd.js:54
+msgid "enter image url"
+msgstr "nhập url hình"
+
+#: media/js/wmd/wmd.js:55
+msgid "enter url"
+msgstr "nhập url"
+
+#: media/js/wmd/wmd.js:56
+msgid "upload file attachment"
+msgstr "tải lên 1 tập tin đính kèm"
+
+#: media/js/wmd/wmd.js:1837
+msgid "image description"
+msgstr "mô tả hình ảnh"
+
+#: media/js/wmd/wmd.js:1840
+msgid "file name"
+msgstr "tên tập tin "
+
+#: media/js/wmd/wmd.js:1844
+msgid "link text"
+msgstr "liên kết văn bản"
+
+#~ msgid "cannot pick own answer as best"
+#~ msgstr "sorry, you cannot accept your own answer"
+
+#~ msgid "please confirm offensive"
+#~ msgstr ""
+#~ "are you sure this post is offensive, contains spam, advertising, malicious "
+#~ "remarks, etc.?"
+
+#~ msgid "please confirm removal of offensive flag"
+#~ msgstr ""
+#~ "are you sure this post is offensive, contains spam, advertising, malicious "
+#~ "remarks, etc.?"
+
+#~ msgid "Post deleted"
+#~ msgstr "your post has been deleted"
+
+#~ msgid "Post approved"
+#~ msgstr "your post is now restored!"
+
+#~ msgid "post a comment"
+#~ msgstr "save comment"
+
+#~ msgid "%s content minchars"
+#~ msgstr "please enter more than %s characters"
+
+#~ msgid "%s title minchars"
+#~ msgstr "please enter at least %s characters"

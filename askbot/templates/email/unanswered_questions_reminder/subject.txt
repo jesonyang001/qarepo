@@ -1,0 +1,5 @@
+{% if tag_summary %}
+    {% trans %}{{ question_count }} {{ unanswered_questions_phrase }} about {{ tag_summary }}{% endtrans %}
+{% else %}
+    {{ question_count }} {{ unanswered_questions_phrase }}
+{% endif %}

@@ -1,0 +1,1 @@
+{% trans %}Subject line depends on the previous incoming email{% endtrans %}

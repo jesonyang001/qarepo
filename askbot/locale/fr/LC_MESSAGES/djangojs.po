@@ -1,0 +1,797 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Benjamin Abel <bbig26@gmail.com>, 2014
+# Benjamin Abel <bbig26@gmail.com>, 2014
+# Camille Baldock <mademoisellegeek42@gmail.com>, 2011
+# ProfGra <christophegragnic@gmail.com>, 2014
+# Christophe kryskool <christophe.chauvet@gmail.com>, 2011-2013
+# Emmanuel <emmanuel@raviart.com>, 2013
+# François Bureau, 2013
+# François Bureau, 2013
+# Camille Baldock <mademoisellegeek42@gmail.com>, 2011
+# R Kaupp <RemiKaupp@wateraid.org>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: askbot\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-01 12:01-0500\n"
+"PO-Revision-Date: 2014-11-25 15:56+0000\n"
+"Last-Translator: R Kaupp <RemiKaupp@wateraid.org>\n"
+"Language-Team: French (http://www.transifex.com/projects/p/askbot/language/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: media/jquery-openid/jquery.openid.js:81
+#, c-format
+msgid "Are you sure you want to remove your %s login?"
+msgstr "Etes-vous sûr de vouloir supprimer votre identifiant %s?"
+
+#: media/jquery-openid/jquery.openid.js:98
+msgid "Please add one or more login methods."
+msgstr "Merci d'ajouter au moins une méthode d'identification."
+
+#: media/jquery-openid/jquery.openid.js:101
+msgid ""
+"You don't have a method to log in right now, please add one or more by "
+"clicking any of the icons below."
+msgstr "Vous n'avez pas encore de méthode d'identification, merci d'en ajouter une ou plus en cliquant sur un des icônes ci-dessous."
+
+#: media/jquery-openid/jquery.openid.js:143
+msgid "passwords do not match"
+msgstr "les mots de passe ne correspondent pas"
+
+#: media/jquery-openid/jquery.openid.js:170
+msgid "Show/change current login methods"
+msgstr "Afficher/modifier les méthodes d'identification actuelles"
+
+#: media/jquery-openid/jquery.openid.js:235
+#, c-format
+msgid "Please enter your %s, then proceed"
+msgstr "Merci de saisir votre %s, puis continuer"
+
+#: media/jquery-openid/jquery.openid.js:237
+msgid "Connect your %(provider_name)s account to %(site)s"
+msgstr "Connecter votre compte %(provider_name)s à %(site)s"
+
+#: media/jquery-openid/jquery.openid.js:331
+#, c-format
+msgid "Change your %s password"
+msgstr "Modifier votre mot de passe %s"
+
+#: media/jquery-openid/jquery.openid.js:332
+msgid "Change password"
+msgstr "Modifier le mot de passe"
+
+#: media/jquery-openid/jquery.openid.js:335
+#, c-format
+msgid "Create a password for %s"
+msgstr "Créer un mot de passe pour %s"
+
+#: media/jquery-openid/jquery.openid.js:336
+msgid "Create password"
+msgstr "Créer un mot de passe"
+
+#: media/jquery-openid/jquery.openid.js:351
+msgid "Create a password-protected account"
+msgstr "Créer un compte protégé par mot de passe"
+
+#: media/js/group_messaging.js:102 media/js/group_messaging.js.c:293
+msgid "required"
+msgstr "requis"
+
+#: media/js/group_messaging.js:139
+msgid "Your message:"
+msgstr "Votre message:"
+
+#: media/js/group_messaging.js:152
+msgid "send"
+msgstr "envoyé"
+
+#: media/js/group_messaging.js:164 media/js/post.js:1970
+#: media/js/post.js.c:3245 media/js/post.js.c:4808 media/js/user.js:841
+msgid "cancel"
+msgstr "annuler"
+
+#: media/js/group_messaging.js:227
+msgid "Reply"
+msgstr "Répondre"
+
+#: media/js/group_messaging.js:236 media/js/group_messaging.js.c:743
+msgid "message sent"
+msgstr "message envoyé"
+
+#: media/js/group_messaging.js:271
+msgid "user {{str}} does not exist"
+msgid_plural "users {{str}} do not exist"
+msgstr[0] "l'utilisateur {{str}} n'existe pas"
+msgstr[1] "les utilisateurs {{str}} n'existent pas"
+
+#: media/js/group_messaging.js:278
+msgid "cannot send message to yourself"
+msgstr "vous ne pouvez pas vous envoyer de message à vous même"
+
+#: media/js/group_messaging.js:323
+msgid "Recipient:"
+msgstr "Destinataire:"
+
+#: media/js/live_search.js:198
+msgid "To see search results, 2 or more characters may be required"
+msgstr "Pour voir le résultat de la recherche, 2 caractères ou plus sont requis"
+
+#: media/js/live_search.js:220
+msgid "Ask Your Question"
+msgstr "Poser votre question"
+
+#: media/js/live_search.js:301
+msgid "Sorry, this tag does not exist"
+msgid_plural "Sorry, these tags do not exist"
+msgstr[0] "Désolé, cette étiquette n'existe pas"
+msgstr[1] "Désolé, ces mots-clés n'existent pas."
+
+#: media/js/live_search.js:315
+msgid "search or ask your question"
+msgstr "Rechercher ou poser votre question"
+
+#: media/js/post.js:28
+msgid "loading..."
+msgstr "chargement..."
+
+#: media/js/post.js:125 media/js/post.js.c:1401
+msgid "tags cannot be empty"
+msgstr "merci de saisir au moins un mot clé"
+
+#: media/js/post.js:131
+msgid "details are required"
+msgstr "les détails sont requis"
+
+#: media/js/post.js:134
+#, c-format
+msgid "details must have > %s character"
+msgid_plural "details must have > %s characters"
+msgstr[0] "veuillez saisir au moins plus de %s caractère"
+msgstr[1] "veuillez saisir au moins plus de %s caractères"
+
+#: media/js/post.js:142
+msgid "enter your question"
+msgstr "saisisser votre question"
+
+#: media/js/post.js:145
+msgid "%(question)s must have > %(length)s character"
+msgid_plural "%(question)s must have > %(length)s characters"
+msgstr[0] ""
+msgstr[1] ""
+
+#: media/js/post.js:168
+msgid "content cannot be empty"
+msgstr "le contenu ne peut pas être vide"
+
+#: media/js/post.js:171
+msgid "%(answer)s must be > %(length)s character"
+msgid_plural "%(answer)s must be > %(length)s characters"
+msgstr[0] "%(answer)s doit inclure > %(length)s caractère"
+msgstr[1] "%(answer)s doit inclure > %(length)s caractères"
+
+#: media/js/post.js:232
+msgid "Back to the question"
+msgstr "Retourner à la question"
+
+#: media/js/post.js:332
+msgid "Merge"
+msgstr ""
+
+#: media/js/post.js:336 media/js/post.js.c:388
+msgid "Load preview"
+msgstr ""
+
+#: media/js/post.js:348
+msgid "messages"
+msgstr ""
+
+#: media/js/post.js:387 media/js/utils.js:1456 media/js/utils.js.c:1948
+msgid "Cancel"
+msgstr "Annuler"
+
+#: media/js/post.js:433
+msgid "draft saved..."
+msgstr "brouillon sauvegardé..."
+
+#: media/js/post.js:678
+msgid "insufficient privilege"
+msgstr "privilège insuffisant"
+
+#: media/js/post.js:681 media/js/post.js.c:1548
+msgid "please login"
+msgstr "merci de vous identifier"
+
+#: media/js/post.js:684
+msgid "anonymous users cannot %(follow_questions)s"
+msgstr ""
+
+#: media/js/post.js:690
+msgid "anonymous users cannot subscribe to questions"
+msgstr "les utilisateurs anonymes ne peuvent pas souscrire à une question"
+
+#: media/js/post.js:691 media/js/post.js.c:1558
+msgid "anonymous users cannot vote"
+msgstr "désolé, les utilisateurs anonymes ne peuvent pas voter"
+
+#: media/js/post.js:693
+msgid "anonymous users cannot flag offensive posts"
+msgstr "les utilisateurs anonymes ne peuvent pas signaler les messages offensants"
+
+#: media/js/post.js:694
+msgid "confirm delete"
+msgstr "êtes-vous de vouloir supprimer ceci?"
+
+#: media/js/post.js:695
+msgid "anonymous users cannot delete/undelete"
+msgstr "désolé, les utilisateurs anonymes ne peuvent pas supprimer ou annuler la suppression d'un message"
+
+#: media/js/post.js:696
+msgid "post recovered"
+msgstr "votre message a été restauré!"
+
+#: media/js/post.js:697
+msgid "post deleted"
+msgstr "votre message a été supprimé"
+
+#: media/js/post.js:932
+msgid "sorry, you cannot %(accept_own_answer)s"
+msgstr ""
+
+#: media/js/post.js:969
+msgid "Follow"
+msgstr "Suivre"
+
+#: media/js/post.js:978 media/js/post.js.c:987
+#, c-format
+msgid "%s follower"
+msgid_plural "%s followers"
+msgstr[0] "%s Abonné"
+msgstr[1] "%s Abonnés"
+
+#: media/js/post.js:983
+msgid "<div>Following</div><div class=\"unfollow\">Unfollow</div>"
+msgstr "<div>Abonnement</div><div class=\"unfollow\">Désabonnement</div>"
+
+#: media/js/post.js:1039
+msgid "remove flag"
+msgstr "supprimer le drapeau"
+
+#: media/js/post.js:1073 media/js/post.js.c:1102
+msgid "flag offensive"
+msgstr "être vous sûr que cette publication est offensante, contient du spam, de la publicité, ou des remarques malicieuses, etc.?"
+
+#: media/js/post.js:1128 media/js/post.js.c:1629
+msgid "undelete"
+msgstr "annuler la suppression"
+
+#: media/js/post.js:1133 media/js/post.js.c:1633
+msgid "delete"
+msgstr "supprimer"
+
+#: media/js/post.js:1350 media/js/post.js.c:1577
+msgid "sorry, something is not right here"
+msgstr "désolé, quelque chose ne semble pas correct ici"
+
+#: media/js/post.js:1808
+msgid "add comment"
+msgstr "ajouter un commentaire"
+
+#: media/js/post.js:1814
+msgid "save comment"
+msgstr "sauvegarder un commentaire"
+
+#: media/js/post.js:1854
+#, c-format
+msgid "enter at least %s characters"
+msgstr "veuillez saisir au moins plus de %s caractères"
+
+#: media/js/post.js:1856
+#, c-format
+msgid "enter at least %s more characters"
+msgstr "veuillez saisir au moins plus de %s caractères"
+
+#: media/js/post.js:1868
+#, c-format
+msgid "%s characters left"
+msgstr "%s caractères restants"
+
+#: media/js/post.js:1870
+msgid "maximum comment length reached"
+msgstr ""
+
+#: media/js/post.js:1984
+msgid "minor edit (don't send alerts)"
+msgstr "edition mineure (ne pas envoyer d'alertes)"
+
+#: media/js/post.js:2016
+msgid "Are you sure you don't want to post this comment?"
+msgstr "Êtes vous sûr de ne pas vouloir publier ce commentaire?"
+
+#: media/js/post.js:2051 media/js/utils.js:3904 media/js/utils.js.c:4059
+msgid "just now"
+msgstr "juste maintenant"
+
+#: media/js/post.js:2117
+msgid "delete this comment"
+msgstr "supprimer ce commentaire"
+
+#: media/js/post.js:2432
+msgid "confirm delete comment"
+msgstr "êtes-vous sûr de vouloir supprimer ce commentaire?"
+
+#: media/js/post.js:2573
+msgid "please sign in or register to post comments"
+msgstr "veuillez vous identifier ou vous enregistrez pour poster un commentaire"
+
+#: media/js/post.js:2724
+msgid "Please enter question title (>10 characters)"
+msgstr "Veuillez donner un titre à la question (>10 caractères)"
+
+#: media/js/post.js:2776 media/js/post.js.c:4836
+msgid "Sorry, you have only read access"
+msgstr "Désolé, vous avez accès seulement en lecture"
+
+#: media/js/post.js:3239 media/js/post.js.c:4079 media/js/post.js.c:4268
+msgid "save"
+msgstr "sauvegarder"
+
+#: media/js/post.js:3363
+msgid "Enter the logo url or upload an image"
+msgstr "Entrer l'URL du logo ou transférer votre image"
+
+#: media/js/post.js:3389
+msgid "Do you really want to remove the image?"
+msgstr "Voulez vous réellement supprimer cette image ?"
+
+#: media/js/post.js:3505
+msgid "change logo"
+msgstr "changer le logo"
+
+#: media/js/post.js:3506
+msgid "add logo"
+msgstr "ajouter un logo"
+
+#: media/js/post.js:3654
+#, c-format
+msgid "tag \"%s\" was already added, no need to repeat (press \"escape\" to delete)"
+msgstr "le mot-clé \"%s\" a déjà été ajouté, pas besoin de répéter l'opération (appuyer sur \"echap\" pour supprimer)"
+
+#: media/js/post.js:3663
+#, c-format
+msgid "a maximum of %s tag is allowed"
+msgid_plural "a maximum of %s tags are allowed"
+msgstr[0] "un maximum de %s étiquette est autorisé"
+msgstr[1] "un maximum de %s mots-clés est autorisé"
+
+#: media/js/post.js:4009
+msgid "Delete category?"
+msgstr "Supprimer la catégorie?"
+
+#: media/js/post.js:4098 media/js/utils.js:1371
+msgid "edit"
+msgstr "modifier"
+
+#: media/js/post.js:4185
+msgid "category name cannot be empty"
+msgstr "veuillez saisir au moins un mot-clé"
+
+#: media/js/post.js:4221
+msgid "already exists at the current level!"
+msgstr "existe déjà à ce niveau là!"
+
+#: media/js/post.js:4257
+msgid "add category"
+msgstr "ajouter une catégorie"
+
+#: media/js/post.js:4804
+msgid "save tags"
+msgstr "sauvegarder les mots-clés"
+
+#: media/js/post.js:4920
+msgid "Group name:"
+msgstr "Nom du groupe:"
+
+#: media/js/post.js:4946
+msgid "Shared with the following users:"
+msgstr "Partagé avec les utilisateurs suivants :"
+
+#: media/js/post.js:4952
+msgid "Shared with the following groups:"
+msgstr "Partagé avec le groupe suivant :"
+
+#: media/js/tag_selector.js:14
+msgid "Tag \"<span></span>\" matches:"
+msgstr "Le mot-clé \"<span></span>\" doit correspondre:"
+
+#: media/js/tag_selector.js:84
+#, c-format
+msgid "and %s more, not shown..."
+msgstr "et %s plus, non montré"
+
+#: media/js/user.js:205
+msgid "Please select at least one item"
+msgstr "Merci de sélectionner au moins un élément"
+
+#: media/js/user.js:241
+msgid "Load more items."
+msgstr ""
+
+#: media/js/user.js:386
+msgid "Looks there are some things to fix:"
+msgstr "Il semblerait qu’il y ait quelque chose à corriger :"
+
+#: media/js/user.js:454
+msgid "Please provide description."
+msgstr "Veuillez fournir une description"
+
+#: media/js/user.js:457
+msgid "Please provide details."
+msgstr "Veuillez fournir des détails."
+
+#: media/js/user.js:544
+msgid "A reason must be selected to delete one."
+msgstr "une raison doit être choisi pour en supprimer une."
+
+#: media/js/user.js:661
+msgid "Please <a href=\"%(signin_url)s\">signin</a> to follow %(username)s"
+msgstr "Veuillez <a href=\"%(signin_url)s\">vous connecter</a> pour suivre %(username)s"
+
+#: media/js/user.js:693
+#, c-format
+msgid "unfollow %s"
+msgstr "Ne plus suivre %s"
+
+#: media/js/user.js:696
+#, c-format
+msgid "following %s"
+msgstr "Abonnement %s"
+
+#: media/js/user.js:702
+#, c-format
+msgid "follow %s"
+msgstr "Suivre %s"
+
+#: media/js/user.js:836
+msgid "add group"
+msgstr "ajouter un groupe"
+
+#: media/js/user.js:916
+msgid "add"
+msgstr "ajouter "
+
+#: media/js/utils.js:81
+msgid "must be shorter than %(max_chars)s character"
+msgid_plural "must be shorter than %(max_chars)s characters"
+msgstr[0] "doit être plus court que %(max_chars)s caractère"
+msgstr[1] "doit être plus court que %(max_chars)s caractères"
+
+#: media/js/utils.js:149
+msgid "and"
+msgstr "et"
+
+#: media/js/utils.js:167
+msgid "click to close"
+msgstr "cliquer pour fermer"
+
+#: media/js/utils.js:670
+#, c-format
+msgid "page %s"
+msgstr ""
+
+#: media/js/utils.js:1370
+msgid "click to edit this comment"
+msgstr "cliquer pour modifier ce commentaire"
+
+#: media/js/utils.js:1401
+msgid "convert to answer"
+msgstr "convertir en réponse"
+
+#: media/js/utils.js:1454
+msgid "Ok"
+msgstr "Ok"
+
+#: media/js/utils.js:1760
+#, c-format
+msgid "Uploaded file: %s"
+msgstr "Transmettre le fichier: %s"
+
+#: media/js/utils.js:1775
+msgid "Choose a different image"
+msgstr "Choisir une image diffénrente"
+
+#: media/js/utils.js:1777
+msgid "Choose a different file"
+msgstr "Choisir un fichier différent"
+
+#: media/js/utils.js:1791
+msgid "Oops, looks like we had an error. Sorry."
+msgstr "Oups, il semblerais que nous ayons une erreur. Désolé."
+
+#: media/js/utils.js:1852
+msgid "Choose an image to insert"
+msgstr "Choisir une image à insérée"
+
+#: media/js/utils.js:1854
+msgid "Choose a file to insert"
+msgstr "Choisir un fichier inséré"
+
+#: media/js/utils.js:1867
+msgid "Allowed file types are:"
+msgstr "Les types de fichier autorisés sont:"
+
+#: media/js/utils.js:1873
+#: media/js/tinymce/plugins/askbot_attachment/editor_plugin.js:35
+msgid "Or paste file url here"
+msgstr "Ou coller l'URL du fichier ici"
+
+#: media/js/utils.js:1947
+msgid "Save"
+msgstr "Sauvegarder"
+
+#: media/js/utils.js:2019
+msgid "saved"
+msgstr "sauvegardé"
+
+#: media/js/utils.js:2143
+msgid "enabled"
+msgstr "activé"
+
+#: media/js/utils.js:2145
+msgid "disabled"
+msgstr "désactivé"
+
+#: media/js/utils.js:2583
+msgid "group name"
+msgstr "Nom du groupe "
+
+#: media/js/utils.js:2591
+msgid "add new group"
+msgstr "ajouter un nouveau groupe"
+
+#: media/js/utils.js:2683
+msgid "Group %(name)s already exists. Group names are case-insensitive."
+msgstr "Le groupe %(name)s existe déjà. Les noms de groupes sont insensibles à la casse."
+
+#: media/js/utils.js:2856
+#, c-format
+msgid "see questions tagged '%s'"
+msgstr "voir les questions marquées '%s'"
+
+#: media/js/utils.js:3902
+msgid "ago"
+msgstr "déjà"
+
+#: media/js/utils.js:3903
+msgid "from now"
+msgstr "maintenant"
+
+#: media/js/utils.js:3905
+msgid "about a minute"
+msgstr "il y a une minute"
+
+#: media/js/utils.js:3906
+#, c-format
+msgid "%d minutes"
+msgstr "%d minutes"
+
+#: media/js/utils.js:3907
+msgid "about an hour"
+msgstr "il y a une heure"
+
+#: media/js/utils.js:3908
+#, c-format
+msgid "%d hours"
+msgstr "%d heures"
+
+#: media/js/utils.js:3909 media/js/utils.js.c:4037
+msgid "yesterday"
+msgstr "hier"
+
+#: media/js/utils.js:3910
+#, c-format
+msgid "%d days"
+msgstr "%d jours"
+
+#: media/js/utils.js:3911
+msgid "about a month"
+msgstr "il y a un mois"
+
+#: media/js/utils.js:3912
+#, c-format
+msgid "%d months"
+msgstr "%d mois"
+
+#: media/js/utils.js:3913
+msgid "about a year"
+msgstr "il y a un an"
+
+#: media/js/utils.js:3914
+#, c-format
+msgid "%d years"
+msgstr "%d années"
+
+#: media/js/utils.js:4012
+msgid "Jan"
+msgstr "Jan"
+
+#: media/js/utils.js:4013
+msgid "Feb"
+msgstr "Fév"
+
+#: media/js/utils.js:4014
+msgid "Mar"
+msgstr "Mar"
+
+#: media/js/utils.js:4015
+msgid "Apr"
+msgstr "Avr"
+
+#: media/js/utils.js:4016
+msgid "May"
+msgstr "Mai"
+
+#: media/js/utils.js:4017
+msgid "Jun"
+msgstr "Juin"
+
+#: media/js/utils.js:4018
+msgid "Jul"
+msgstr "Jui"
+
+#: media/js/utils.js:4019
+msgid "Aug"
+msgstr "Aoû"
+
+#: media/js/utils.js:4020
+msgid "Sep"
+msgstr "Sep"
+
+#: media/js/utils.js:4021
+msgid "Oct"
+msgstr "Oct"
+
+#: media/js/utils.js:4022
+msgid "Nov"
+msgstr "Nov"
+
+#: media/js/utils.js:4023
+msgid "Dec"
+msgstr "Dec"
+
+#: media/js/utils.js:4035
+msgid "2 days ago"
+msgstr "il y a 2 jours"
+
+#: media/js/utils.js:4042
+#, c-format
+msgid "%s hour ago"
+msgid_plural "%s hours ago"
+msgstr[0] "il y a %s heure"
+msgstr[1] "il y a %s heures"
+
+#: media/js/utils.js:4052
+#, c-format
+msgid "%s min ago"
+msgid_plural "%s mins ago"
+msgstr[0] "il y a %s minute"
+msgstr[1] "il y a %s minutes"
+
+#: media/js/tinymce/plugins/askbot_attachment/editor_plugin.js:71
+msgid "Insert a file"
+msgstr "insérer un fichier"
+
+#: media/js/tinymce/plugins/askbot_imageuploader/editor_plugin.js:70
+msgid "Insert image"
+msgstr "entrer l'URL de l'image, ex. http://www.example.com/image.jpg ou transférer le fichier de l'image"
+
+#: media/js/wmd/wmd.js:31
+msgid "bold"
+msgstr "gras"
+
+#: media/js/wmd/wmd.js:32
+msgid "italic"
+msgstr "italique"
+
+#: media/js/wmd/wmd.js:33
+msgid "link"
+msgstr "lien"
+
+#: media/js/wmd/wmd.js:34
+msgid "quote"
+msgstr "citation"
+
+#: media/js/wmd/wmd.js:35
+msgid "preformatted text"
+msgstr "texte pré-formaté"
+
+#: media/js/wmd/wmd.js:36
+msgid "image"
+msgstr "image"
+
+#: media/js/wmd/wmd.js:37
+msgid "attachment"
+msgstr "pièce jointe"
+
+#: media/js/wmd/wmd.js:38
+msgid "numbered list"
+msgstr "liste numérotée"
+
+#: media/js/wmd/wmd.js:39
+msgid "bulleted list"
+msgstr "liste à puces"
+
+#: media/js/wmd/wmd.js:40
+msgid "heading"
+msgstr "titre"
+
+#: media/js/wmd/wmd.js:41
+msgid "horizontal bar"
+msgstr "barre horizontale"
+
+#: media/js/wmd/wmd.js:42
+msgid "undo"
+msgstr "défaire"
+
+#: media/js/wmd/wmd.js:43 media/js/wmd/wmd.js.c:1170
+msgid "redo"
+msgstr "refaire"
+
+#: media/js/wmd/wmd.js:54
+msgid "enter image url"
+msgstr "saisir l'URL de l'image, par example http://www.example.com/image.jpg ou télécharger une image vers le serveur"
+
+#: media/js/wmd/wmd.js:55
+msgid "enter url"
+msgstr "saisir une adresse web, par example http://www.example.com \"titre de la page\""
+
+#: media/js/wmd/wmd.js:56
+msgid "upload file attachment"
+msgstr "Merci de choisir un fichier et de le télécharger vers le serveur:"
+
+#: media/js/wmd/wmd.js:1837
+msgid "image description"
+msgstr "description de l'image"
+
+#: media/js/wmd/wmd.js:1840
+msgid "file name"
+msgstr "nom du fichier"
+
+#: media/js/wmd/wmd.js:1844
+msgid "link text"
+msgstr "texte du lien"
+
+#~ msgid "cannot pick own answer as best"
+#~ msgstr "sorry, you cannot accept your own answer"
+
+#~ msgid "please confirm offensive"
+#~ msgstr ""
+#~ "are you sure this post is offensive, contains spam, advertising, malicious "
+#~ "remarks, etc.?"
+
+#~ msgid "please confirm removal of offensive flag"
+#~ msgstr ""
+#~ "are you sure this post is offensive, contains spam, advertising, malicious "
+#~ "remarks, etc.?"
+
+#~ msgid "Post deleted"
+#~ msgstr "your post has been deleted"
+
+#~ msgid "Post approved"
+#~ msgstr "your post is now restored!"
+
+#~ msgid "post a comment"
+#~ msgstr "save comment"
+
+#~ msgid "%s content minchars"
+#~ msgstr "please enter more than %s characters"
+
+#~ msgid "%s title minchars"
+#~ msgstr "please enter at least %s characters"

@@ -1,0 +1,27 @@
+{% import "macros.html" as macros %}
+{% cache 0 "tags" tags tag_list_type query_string language_code %}
+    <div class="js-related-tags">
+    {% if tag_list_type == 'list' %}
+        <ul class="tags">
+            {% for tag in tags %}
+            <li>
+            {{ macros.tag_widget(
+                  tag.name,
+                  extra_content = '<span class="tag-number">&#215;' ~
+                  tag.local_used_count|intcomma ~ '</span>',
+                  search_state = search_state
+            )}}
+            </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        {{ 
+            macros.tag_cloud(
+                tags = tags,
+                font_sizes = font_size,
+                search_state = search_state
+            )
+        }}
+    {% endif %}
+    </div>
+{% endcache %}

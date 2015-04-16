@@ -1,0 +1,7 @@
+<img src="{{ avatar.url }}" height="128" width="128" 
+    {% if avatar.is_primary %}
+        alt="{% trans username=view_user.username|escape %}{{ username }}'s primary avatar{% endtrans %}"
+    {% else %}
+        alt="{% trans username=view_user.username|escape %}{{ username }}'s avatar{% endtrans %}"
+    {% endif %}
+/>

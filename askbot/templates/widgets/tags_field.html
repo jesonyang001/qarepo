@@ -1,0 +1,25 @@
+<div class="form-item question-tags form-group">
+    {% if settings.TAG_SOURCE == 'category-tree' %}
+        {% include "widgets/three_column_category_selector.html" %}
+        <div class="tags-desc">{% trans %}Tags{% endtrans %}</div>
+        {% include "widgets/tag_editor.html" %}
+    {% else %}
+        <label for="id_tags">
+        {% if tags_are_required %}
+            {% if mandatory_tags %}
+                {% trans %}tags{% endtrans %}
+                {% trans %}, one of these is required{% endtrans %}
+                {{ tag_list_widget(mandatory_tags, make_links=False, css_class='clearfix') }}
+            {% else %}
+                {% trans %}Tags{% endtrans %}
+                {% trans %}(required){% endtrans %}
+            {% endif %}
+        {% else %}
+            {% trans %}Tags{% endtrans %}
+        {% endif %}
+        </label>
+        <span class="form-error">{{ form.tags.errors }}</span><br/>
+        {{ form.tags }}<br/>
+        <p class="help-text">{{ form.tags.help_text }}</p>
+    {% endif %}
+</div>

@@ -1,0 +1,9 @@
+{{ object.title }}
+
+{% for post in object.get_public_posts() %}
+{{ post.text }}
+{% endfor %}
+
+{% for tag in object.tags.all() %}
+{{ tag.name }}
+{% endfor %}

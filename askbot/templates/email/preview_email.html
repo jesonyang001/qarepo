@@ -1,0 +1,29 @@
+{% extends "one_column_body.html" %}
+{% block title %}{% trans title=email.title %}Preview of email "{{ title }}"{% endtrans %}{% endblock %}
+{% block content %}
+    <ol class="breadcrumb">
+        <li><a href="{% url "list_emails" %}">{% trans %}Askbot emails{% endtrans %}:</a></li>
+        <li>{{ email.title }}</li>
+    </ol>
+    <h1>{% trans title=email.title %}Preview of email "{{ title }}"{% endtrans %}</h1>
+    <div>{% trans %}Description{% endtrans %}: {{ email.description }}</div>
+    {% if error_message %}
+        <div>{{ error_message }}</div>
+    {% else %}
+        <div>{% trans %}Subject{% endtrans %}: <strong>"{{ subject }}"</strong></div>
+        <div>{% trans %}Body text (below, email styling preserved){% endtrans %}</div>
+        <div><iframe id="js-email-body" width="100%"></iframe></div>{# use iframe to render styling correctly #}
+        <script type="text/javascript">
+            {# adds content of the email to the iframe #}
+            (function() {
+                var iframe = document.getElementById('js-email-body');
+                var doc = iframe.contentDocument ? 
+                        iframe.contentDocument : 
+                        (iframe.contentWindow ? iframe.contentWindow.document : iframe.document);
+                doc.write('{{ body|escapejs }}');
+                iframe.style.height = 0;
+                iframe.style.height = doc.body.scrollHeight + 'px';
+            })();
+        </script>
+    {% endif %}
+{% endblock %}

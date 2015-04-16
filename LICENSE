@@ -1,0 +1,49 @@
+Askbot - Django Q&A forum application.
+Copyright (C) 2009. Chen Gang and Sailing Cai.
+2009-2011 Evgeny Fadeev and individual contributors of Askbot project (see AUTHORS).
+All rights reserved.
+
+LICENSE
+=======
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+TRADEMARKS
+==========
+Some of the files in askbot/media/images/jquery-openid/ are protected
+trademarks. Licenses for those follow here:
+
+
+Fedora
+------
+
+Limited permission to use and redistribute the Fedora logo is permitted
+with the following restrictions:
+
+* The Fedora logo must not be modified in any way.
+* The Fedora logo must only be used to refer to the Fedora OpenID provider.
+
+In all other regards, the Fedora Trademark Guidelines apply to the
+Fedora logo:
+
+https://fedoraproject.org/wiki/Legal:Trademark_guidelines
+
+Fedora®, the Fedora word design, the Infinity design logo, Fedora Remix,
+and the Fedora Remix word design, either separately or in combination,
+are hereinafter referred to as "Fedora Trademarks" and are trademarks of
+Red Hat, Inc. Except as provided in this license, you may not use the
+Fedora Trademarks in any other manner that might cause confusion in the
+marketplace, or imply endorsement of Fedora or Red Hat, Inc for any
+products or services.

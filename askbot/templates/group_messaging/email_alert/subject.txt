@@ -1,0 +1,1 @@
+{{ message.get_email_subject_line() }}

@@ -1,0 +1,16 @@
+<div class="tabBar tabBar-answer">
+    <h2 id="questionCount">
+        {{ answer_count }} {{ settings.WORDS_ANSWERS_COUNTABLE_FORMS|py_pluralize(answer_count) }}
+    </h2>
+    <div class="tabsA">
+                    <span class="label">
+                    {% trans %}Sort by »{% endtrans %}
+                    </span>
+        <a id="oldest" href="{{ question.get_absolute_url() }}?sort=oldest#sort-top"
+        ><span>{% trans %}oldest{% endtrans %}</span></a>
+        <a id="latest" href="{{ question.get_absolute_url() }}?sort=latest#sort-top"
+        ><span>{% trans %}newest{% endtrans %}</span></a>
+        <a id="votes" href="{{ question.get_absolute_url() }}?sort=votes#sort-top"
+        ><span>{% trans %}most voted{% endtrans %}</span></a>
+    </div>
+</div>

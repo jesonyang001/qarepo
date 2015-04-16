@@ -1,0 +1,8 @@
+{
+    "preset": "crockford",
+
+    "requireCamelCaseOrUpperCaseIdentifiers": null,
+    "disallowQuotedKeysInObjects": null,
+    "requireMultipleVarDecl": null,
+    "disallowDanglingUnderscores": null
+}

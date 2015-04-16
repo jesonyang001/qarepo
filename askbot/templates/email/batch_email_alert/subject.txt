@@ -1,0 +1,13 @@
+{% if tag_summary %}
+    {% trans topics=tag_summary, question_count=question_count -%}
+        {{ question_count }} update about {{ topics }}
+    {%- pluralize question_count -%}
+        {{ question_count }} updates about {{ topics }}
+    {%- endtrans %}
+{% else %}
+    {% trans question_count=question_count -%}
+        {{ question_count }} update
+    {%- pluralize question_count -%}
+        {{ question_count }} updates
+    {%- endtrans %}
+{% endif %}

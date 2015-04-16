@@ -1,0 +1,70 @@
+{% extends "user_profile/user.html" %}
+{% block profilesection %}
+    {% trans %}manage avatars{% endtrans %}
+{% endblock %}
+{% block usercontent %}
+    <ul class="avatars">
+        {% for avatar in avatar_data %}
+            <li {% if avatar.is_primary %}class="avatar-primary"{% endif %}>
+                {% if avatar.avatar_type == 'default_avatar' %}
+                    <p class="avatar-label" title="{% trans %}This is a default avatar image, shown at your account because you have not yet uploaded an avatar.{% endtrans %}">{% trans %}Default avatar{% endtrans %}</p>
+                    {# show default avatar #}
+                    {% include "avatar/avatar.html" %}
+                    {% if not avatar.is_primary %}
+                        {# select this avatar as primary #}
+                        <form method="POST" action="{% url askbot_avatar_enable_default_avatar view_user.id %}">
+                            {% csrf_token %}
+                            <input type="submit" class="btn btn-primary" 
+                                value="{% trans %}Set as primary{% endtrans %}" />
+                        </form>
+                    {% endif %}
+                {% elif avatar.avatar_type == 'gravatar' %}
+                    {% spaceless %}
+                    <p class="avatar-label" title="{% trans email=view_user.email %}This image, called 'gravatar', is linked to the email address {{ email }}.  It can be changed at http://gravatar.com{% endtrans %}">{% trans %}Gravatar{% endtrans %}</p>
+                    {% endspaceless %}
+                    {# show gravatar #}
+                    {% include "avatar/avatar.html" %}
+                    {% if not avatar.is_primary %}
+                        {# select this avatar as primary #}
+                        <form method="POST" action="{% url askbot_avatar_enable_gravatar view_user.id %}">
+                            {% csrf_token %}
+                            <input type="submit" class="btn btn-primary" 
+                                value="{% trans %}Set as primary{% endtrans %}" />
+                        </form>
+                    {% endif %}
+                {% else %}
+                    {# show uploaded avatar #}
+                    {% include "avatar/avatar.html" %}
+                    {% if not avatar.is_primary %}
+                        {# select this avatar as primary #}
+                        <form method="POST" action="{% url askbot_avatar_set_primary view_user.id %}">{% csrf_token %}
+                            <input type="hidden" name="choice" value="{{ avatar.id }}" />
+                            <p><input type="submit" class="btn btn-primary" value="{% trans %}Set as primary{% endtrans %}" /></p>
+                        </form>
+                    {% endif %}
+                    {# delete avatar button #}
+                    <form method="POST" action="{% url askbot_avatar_delete avatar.id %}">
+                        {% csrf_token %}
+                        <input type="submit" class="btn btn-primary avatar-delete" value="x" />
+                        <span class="sr-only">{% trans %}Remove{% endtrans %}</span>
+                    </form>
+                {% endif %}
+                {% if avatar.is_primary %}
+                    <p class="avatar-primary-label">{% trans %}Primary avatar{% endtrans %}</p>
+                {% endif %}
+            </li>
+        {% endfor %}
+        <li>
+        {% if can_upload %}
+            {% if not has_uploaded_avatar %}
+                <p>{% trans %}You haven't uploaded an avatar yet.{% endtrans %}</p>
+            {% endif %}
+            <form enctype="multipart/form-data" method="POST" action="{% url askbot_avatar_upload view_user.id %}">
+                {% csrf_token %}
+                {{ upload_avatar_form.as_p() }}
+                <p><input type="submit" class="btn btn-primary" value="{% trans %}Upload an avatar{% endtrans %}" /></p>
+            </form>
+        {% endif %}
+        </li>
+    </ul>
+{% endblock %}

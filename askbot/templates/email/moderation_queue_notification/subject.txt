@@ -1,0 +1,1 @@
+{% trans %}{{ site }} moderation alert{% endtrans %}

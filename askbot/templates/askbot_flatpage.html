@@ -1,0 +1,6 @@
+{% extends "one_column_body.html" %}
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
+<h1 class="section-title">{{ title }}</h1>
+<div>{{ content|safe }}</div>
+{% endblock %}

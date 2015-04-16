@@ -1,0 +1,58 @@
+{% extends "one_column_body.html" %}
+<!-- user.html -->
+{% block title %}{% spaceless %}{{ page_title }}{% endspaceless %}{% endblock %}
+{% block forestyle %}
+<style type="text/css">
+    .history-table td { padding: 5px; }
+</style>
+{% endblock %}
+{% block content %}
+    <h1 class="section-title">
+        {% spaceless %}
+        {% trans username=view_user.username|escape %}{{username}}'s profile{% endtrans %} - {% block profilesection %}{% endblock %}
+        {% endspaceless %}
+    </h1>
+    {% include "user_profile/user_tabs.html" %}
+    <div>
+        {% block usercontent %}
+        {% endblock %}
+    </div>
+{% endblock %}<!-- end user.html -->
+{% block endjs %}
+    <script type="text/javascript">
+        askbot['data']['viewUserName'] = '{{ view_user.username|escape }}';
+        askbot['data']['viewUserId'] = {{ view_user.id }};
+        askbot['urls']['edit_group_membership'] = '{% url edit_group_membership %}';
+        askbot['urls']['getGroupsList'] = '{% url get_groups_list %}';
+        askbot['urls']['getTopAnswers'] = '{% url get_top_answers %}';
+        askbot['data']['userPostsPageSize'] = {{ page_size }};
+    </script>
+    {% compress js %}
+    <script type='text/javascript' src="{{ '/jslib/jquery.form.js'|media }}"></script>
+    <script type="text/javascript" src="{{ '/js/user/response_notifs.js'|media }}"></script>
+    <script type="text/javascript" src="{{ '/js/user/decline_and_explain_menu.js'|media }}"></script>
+    <script type="text/javascript" src="{{ '/js/user/post_moderation_controls.js'|media }}"></script>
+    <script type="text/javascript" src="{{ '/js/user/manage_reject_reasons_dialog.js'|media }}"></script>
+    <script type="text/javascript" src="{{ '/js/user/user_group.js'|media }}"></script>
+    <script type="text/javascript" src="{{ '/js/user/groups_container.js'|media }}"></script>
+    <script type="text/javascript" src="{{ '/js/user/group_adder_widget.js'|media }}"></script>
+    <script type="text/javascript" src="{{ '/js/user/user_groups_editor.js'|media }}"></script>
+    <script type="text/javascript" src="{{ '/js/user/tweeting.js'|media }}"></script>
+    <script type="text/javascript" src="{{ '/js/user/user_questions_paginator.js'|media }}"></script>
+    <script type="text/javascript" src="{{ '/js/user/user_answer_paginator.js'|media }}"></script>
+    <script type="text/javascript" src="{{ '/js/user.js'|media }}"></script>
+    <script type="text/javascript" src="{{ '/jslib/jquery.validate.min.js'|media }}"></script>
+    <script type="text/javascript" src="{{ '/jslib/prettify.js'|media }}"></script>
+    <script type="text/javascript" src="{{ '/js/post.js'|media }}"></script>
+    {% endcompress %}
+    {% block userjs %}
+    {% endblock %}
+{% endblock %}
+{% block sidebar %}
+    {% if 'SIDEBAR_PROFILE'|show_block_to(request.user) %}
+    <div class="box">
+        {{ settings.SIDEBAR_PROFILE }}
+    </div>
+    {% endif %}
+{% endblock %}
+<!-- end of user.html -->

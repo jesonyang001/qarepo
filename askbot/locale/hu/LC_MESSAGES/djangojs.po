@@ -1,0 +1,789 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Gabor Kelemen <kelemeng at gnome dot hu>, 2013
+# kelemeng <kelemeng@ubuntu.com>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: askbot\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-01 12:01-0500\n"
+"PO-Revision-Date: 2014-11-01 17:05+0000\n"
+"Last-Translator: evgeny <evgeny.fadeev@gmail.com>\n"
+"Language-Team: Hungarian (http://www.transifex.com/projects/p/askbot/language/hu/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: media/jquery-openid/jquery.openid.js:81
+#, c-format
+msgid "Are you sure you want to remove your %s login?"
+msgstr "Biztos, hogy el akarja távolítani a bejelentkezést („%s”)?"
+
+#: media/jquery-openid/jquery.openid.js:98
+msgid "Please add one or more login methods."
+msgstr "Vegyen fel legalább egy bejelentkezési módszert."
+
+#: media/jquery-openid/jquery.openid.js:101
+msgid ""
+"You don't have a method to log in right now, please add one or more by "
+"clicking any of the icons below."
+msgstr "Nincs bejelentkezési módszer, vegyen fel legalább egyet az alábbi ikonokra kattintva."
+
+#: media/jquery-openid/jquery.openid.js:143
+msgid "passwords do not match"
+msgstr "a jelszavak nem egyeznek"
+
+#: media/jquery-openid/jquery.openid.js:170
+msgid "Show/change current login methods"
+msgstr "Bejelentkezési módszerek megjelenítése/módosítása"
+
+#: media/jquery-openid/jquery.openid.js:235
+#, c-format
+msgid "Please enter your %s, then proceed"
+msgstr "Adja meg a következőt: %s, majd folytassa"
+
+#: media/jquery-openid/jquery.openid.js:237
+msgid "Connect your %(provider_name)s account to %(site)s"
+msgstr "Kapcsolja össze %(provider_name)s fiókját ezzel: %(site)s"
+
+#: media/jquery-openid/jquery.openid.js:331
+#, c-format
+msgid "Change your %s password"
+msgstr "Módosítsa %s jelszavát"
+
+#: media/jquery-openid/jquery.openid.js:332
+msgid "Change password"
+msgstr "Jelszócsere"
+
+#: media/jquery-openid/jquery.openid.js:335
+#, c-format
+msgid "Create a password for %s"
+msgstr "Jelszó létrehozása ehhez: %s"
+
+#: media/jquery-openid/jquery.openid.js:336
+msgid "Create password"
+msgstr "Jelszó létrehozása"
+
+#: media/jquery-openid/jquery.openid.js:351
+msgid "Create a password-protected account"
+msgstr "Jelszóval védett fiók létrehozása"
+
+#: media/js/group_messaging.js:102 media/js/group_messaging.js.c:293
+msgid "required"
+msgstr "szükséges"
+
+#: media/js/group_messaging.js:139
+msgid "Your message:"
+msgstr "Az üzenete:"
+
+#: media/js/group_messaging.js:152
+msgid "send"
+msgstr "küldés"
+
+#: media/js/group_messaging.js:164 media/js/post.js:1970
+#: media/js/post.js.c:3245 media/js/post.js.c:4808 media/js/user.js:841
+msgid "cancel"
+msgstr "mégse"
+
+#: media/js/group_messaging.js:227
+msgid "Reply"
+msgstr "Válasz"
+
+#: media/js/group_messaging.js:236 media/js/group_messaging.js.c:743
+msgid "message sent"
+msgstr "üzenet elküldve"
+
+#: media/js/group_messaging.js:271
+msgid "user {{str}} does not exist"
+msgid_plural "users {{str}} do not exist"
+msgstr[0] "a(z) {{str}} felhasználó nem létezik"
+msgstr[1] "a(z) {{str}} felhasználók nem léteznek"
+
+#: media/js/group_messaging.js:278
+msgid "cannot send message to yourself"
+msgstr "nem küldhet üzenetet önmagának"
+
+#: media/js/group_messaging.js:323
+msgid "Recipient:"
+msgstr "Címzett: "
+
+#: media/js/live_search.js:198
+msgid "To see search results, 2 or more characters may be required"
+msgstr "A találatok megjelenítéséhez legalább két karakter lehet szükséges"
+
+#: media/js/live_search.js:220
+msgid "Ask Your Question"
+msgstr "Tegye fel kérdését"
+
+#: media/js/live_search.js:301
+msgid "Sorry, this tag does not exist"
+msgid_plural "Sorry, these tags do not exist"
+msgstr[0] "Elnézést, ez a címke nem létezik"
+msgstr[1] "Elnézést, ez a címke nem létezik"
+
+#: media/js/live_search.js:315
+msgid "search or ask your question"
+msgstr "keressen vagy tegye fel kérdését"
+
+#: media/js/post.js:28
+msgid "loading..."
+msgstr "betöltés…"
+
+#: media/js/post.js:125 media/js/post.js.c:1401
+msgid "tags cannot be empty"
+msgstr "a címkék nem lehetnek üresek"
+
+#: media/js/post.js:131
+msgid "details are required"
+msgstr "az adatok kötelezők"
+
+#: media/js/post.js:134
+#, c-format
+msgid "details must have > %s character"
+msgid_plural "details must have > %s characters"
+msgstr[0] "írjon be még legalább %s karaktert"
+msgstr[1] "írjon be még legalább %s karaktert"
+
+#: media/js/post.js:142
+msgid "enter your question"
+msgstr "írja be kérdését"
+
+#: media/js/post.js:145
+msgid "%(question)s must have > %(length)s character"
+msgid_plural "%(question)s must have > %(length)s characters"
+msgstr[0] ""
+msgstr[1] ""
+
+#: media/js/post.js:168
+msgid "content cannot be empty"
+msgstr "a tartalom nem lehet üres"
+
+#: media/js/post.js:171
+msgid "%(answer)s must be > %(length)s character"
+msgid_plural "%(answer)s must be > %(length)s characters"
+msgstr[0] ""
+msgstr[1] ""
+
+#: media/js/post.js:232
+msgid "Back to the question"
+msgstr "Vissza a kérdéshez"
+
+#: media/js/post.js:332
+msgid "Merge"
+msgstr ""
+
+#: media/js/post.js:336 media/js/post.js.c:388
+msgid "Load preview"
+msgstr ""
+
+#: media/js/post.js:348
+msgid "messages"
+msgstr ""
+
+#: media/js/post.js:387 media/js/utils.js:1456 media/js/utils.js.c:1948
+msgid "Cancel"
+msgstr "Mégse"
+
+#: media/js/post.js:433
+msgid "draft saved..."
+msgstr "piszkozat mentve…"
+
+#: media/js/post.js:678
+msgid "insufficient privilege"
+msgstr "nincs jogosultsága"
+
+#: media/js/post.js:681 media/js/post.js.c:1548
+msgid "please login"
+msgstr "jelentkezzen be"
+
+#: media/js/post.js:684
+msgid "anonymous users cannot %(follow_questions)s"
+msgstr ""
+
+#: media/js/post.js:690
+msgid "anonymous users cannot subscribe to questions"
+msgstr "névtelen felhasználók nem iratkozhatnak fel a kérdésekre"
+
+#: media/js/post.js:691 media/js/post.js.c:1558
+msgid "anonymous users cannot vote"
+msgstr "névtelen felhasználók nem szavazhatnak"
+
+#: media/js/post.js:693
+msgid "anonymous users cannot flag offensive posts"
+msgstr "névtelen felhasználók nem jelölhetnek meg sértő bejegyzéseket"
+
+#: media/js/post.js:694
+msgid "confirm delete"
+msgstr "törlés jóváhagyása"
+
+#: media/js/post.js:695
+msgid "anonymous users cannot delete/undelete"
+msgstr "névtelen felhasználók nem törölhetnek/vonhatják azt vissza"
+
+#: media/js/post.js:696
+msgid "post recovered"
+msgstr "bejegyzés helyreállítva"
+
+#: media/js/post.js:697
+msgid "post deleted"
+msgstr "bejegyzés törölve"
+
+#: media/js/post.js:932
+msgid "sorry, you cannot %(accept_own_answer)s"
+msgstr ""
+
+#: media/js/post.js:969
+msgid "Follow"
+msgstr "Követés"
+
+#: media/js/post.js:978 media/js/post.js.c:987
+#, c-format
+msgid "%s follower"
+msgid_plural "%s followers"
+msgstr[0] "%s követő"
+msgstr[1] "%s követő"
+
+#: media/js/post.js:983
+msgid "<div>Following</div><div class=\"unfollow\">Unfollow</div>"
+msgstr "<div>Követés</div><div class=\"unfollow\">Követés törlése</div>"
+
+#: media/js/post.js:1039
+msgid "remove flag"
+msgstr "jelző eltávolítása"
+
+#: media/js/post.js:1073 media/js/post.js.c:1102
+msgid "flag offensive"
+msgstr "megjelölés sértőként"
+
+#: media/js/post.js:1128 media/js/post.js.c:1629
+msgid "undelete"
+msgstr "törlés visszavonása"
+
+#: media/js/post.js:1133 media/js/post.js.c:1633
+msgid "delete"
+msgstr "törlés"
+
+#: media/js/post.js:1350 media/js/post.js.c:1577
+msgid "sorry, something is not right here"
+msgstr "elnézést, valamilyen hiba történt"
+
+#: media/js/post.js:1808
+msgid "add comment"
+msgstr "hozzászólás"
+
+#: media/js/post.js:1814
+msgid "save comment"
+msgstr "hozzászólás mentése"
+
+#: media/js/post.js:1854
+#, c-format
+msgid "enter at least %s characters"
+msgstr "írjon be legalább %s karaktert"
+
+#: media/js/post.js:1856
+#, c-format
+msgid "enter at least %s more characters"
+msgstr "írjon be még legalább %s karaktert"
+
+#: media/js/post.js:1868
+#, c-format
+msgid "%s characters left"
+msgstr "%s karakter van hátra"
+
+#: media/js/post.js:1870
+msgid "maximum comment length reached"
+msgstr ""
+
+#: media/js/post.js:1984
+msgid "minor edit (don't send alerts)"
+msgstr "kis módosítás (ne küldjön értesítéseket)"
+
+#: media/js/post.js:2016
+msgid "Are you sure you don't want to post this comment?"
+msgstr "Biztosan nem akarja beküldeni ezt a hozzászólást?"
+
+#: media/js/post.js:2051 media/js/utils.js:3904 media/js/utils.js.c:4059
+msgid "just now"
+msgstr "csak most"
+
+#: media/js/post.js:2117
+msgid "delete this comment"
+msgstr "hozzászólás törlése"
+
+#: media/js/post.js:2432
+msgid "confirm delete comment"
+msgstr "hozzászólás törlésének jóváhagyása"
+
+#: media/js/post.js:2573
+msgid "please sign in or register to post comments"
+msgstr "jelentkezzen be vagy regisztráljon a hozzászóláshoz"
+
+#: media/js/post.js:2724
+msgid "Please enter question title (>10 characters)"
+msgstr "Adja meg a kérdés címét (>10 karakter)"
+
+#: media/js/post.js:2776 media/js/post.js.c:4836
+msgid "Sorry, you have only read access"
+msgstr "Elnézést, csak olvasási hozzáférése van"
+
+#: media/js/post.js:3239 media/js/post.js.c:4079 media/js/post.js.c:4268
+msgid "save"
+msgstr "mentés"
+
+#: media/js/post.js:3363
+msgid "Enter the logo url or upload an image"
+msgstr "Adja meg a logó URL-t vagy töltsön fel egy képet"
+
+#: media/js/post.js:3389
+msgid "Do you really want to remove the image?"
+msgstr "Valóban el kívánja távolítani a képet?"
+
+#: media/js/post.js:3505
+msgid "change logo"
+msgstr "logó módosítása"
+
+#: media/js/post.js:3506
+msgid "add logo"
+msgstr "logó hozzáadása"
+
+#: media/js/post.js:3654
+#, c-format
+msgid "tag \"%s\" was already added, no need to repeat (press \"escape\" to delete)"
+msgstr "a címke („%s”) már létezik, nem kell megismételni (Esc a törléshez)"
+
+#: media/js/post.js:3663
+#, c-format
+msgid "a maximum of %s tag is allowed"
+msgid_plural "a maximum of %s tags are allowed"
+msgstr[0] "legfeljebb %s címke engedélyezett"
+msgstr[1] "legfeljebb %s címke engedélyezett"
+
+#: media/js/post.js:4009
+msgid "Delete category?"
+msgstr "Törli a kategóriát?"
+
+#: media/js/post.js:4098 media/js/utils.js:1371
+msgid "edit"
+msgstr "szerkesztés"
+
+#: media/js/post.js:4185
+msgid "category name cannot be empty"
+msgstr "a kategórianév nem lehet üres"
+
+#: media/js/post.js:4221
+msgid "already exists at the current level!"
+msgstr "már létezik ezen a szinten!"
+
+#: media/js/post.js:4257
+msgid "add category"
+msgstr "új kategória"
+
+#: media/js/post.js:4804
+msgid "save tags"
+msgstr "címkék mentése"
+
+#: media/js/post.js:4920
+msgid "Group name:"
+msgstr "Csoportnév:"
+
+#: media/js/post.js:4946
+msgid "Shared with the following users:"
+msgstr "Megosztva ezen felhasználókkal:"
+
+#: media/js/post.js:4952
+msgid "Shared with the following groups:"
+msgstr "Megosztva ezen csoportokkal:"
+
+#: media/js/tag_selector.js:14
+msgid "Tag \"<span></span>\" matches:"
+msgstr "A „<span></span>” címke illeszkedik:"
+
+#: media/js/tag_selector.js:84
+#, c-format
+msgid "and %s more, not shown..."
+msgstr "és még %s nem látható…"
+
+#: media/js/user.js:205
+msgid "Please select at least one item"
+msgstr "Válasszon ki legalább egy elemet"
+
+#: media/js/user.js:241
+msgid "Load more items."
+msgstr ""
+
+#: media/js/user.js:386
+msgid "Looks there are some things to fix:"
+msgstr "Úgy tűnik, még pár dolgot ki kell javítani:"
+
+#: media/js/user.js:454
+msgid "Please provide description."
+msgstr "Adjon meg egy leírást."
+
+#: media/js/user.js:457
+msgid "Please provide details."
+msgstr "Adjon meg részleteket."
+
+#: media/js/user.js:544
+msgid "A reason must be selected to delete one."
+msgstr "Ki kell választani egy okot a törléshez."
+
+#: media/js/user.js:661
+msgid "Please <a href=\"%(signin_url)s\">signin</a> to follow %(username)s"
+msgstr "<a href=\"%(signin_url)s\">Jelentkezzen be</a> %(username)s követéséhez"
+
+#: media/js/user.js:693
+#, c-format
+msgid "unfollow %s"
+msgstr "%s követésének befejezése"
+
+#: media/js/user.js:696
+#, c-format
+msgid "following %s"
+msgstr "%s követése"
+
+#: media/js/user.js:702
+#, c-format
+msgid "follow %s"
+msgstr "%s követése"
+
+#: media/js/user.js:836
+msgid "add group"
+msgstr "csoport hozzáadása"
+
+#: media/js/user.js:916
+msgid "add"
+msgstr "hozzáadás"
+
+#: media/js/utils.js:81
+msgid "must be shorter than %(max_chars)s character"
+msgid_plural "must be shorter than %(max_chars)s characters"
+msgstr[0] "%(max_chars)s karakternél rövidebbnek kell lennie"
+msgstr[1] "%(max_chars)s karakternél rövidebbnek kell lennie"
+
+#: media/js/utils.js:149
+msgid "and"
+msgstr "és"
+
+#: media/js/utils.js:167
+msgid "click to close"
+msgstr "kattintson a bezáráshoz"
+
+#: media/js/utils.js:670
+#, c-format
+msgid "page %s"
+msgstr ""
+
+#: media/js/utils.js:1370
+msgid "click to edit this comment"
+msgstr "kattintson a megjegyzés szerkesztéséhez"
+
+#: media/js/utils.js:1401
+msgid "convert to answer"
+msgstr "átalakítás válasszá"
+
+#: media/js/utils.js:1454
+msgid "Ok"
+msgstr "Ok"
+
+#: media/js/utils.js:1760
+#, c-format
+msgid "Uploaded file: %s"
+msgstr "Fájl feltöltve: %s"
+
+#: media/js/utils.js:1775
+msgid "Choose a different image"
+msgstr "Válasszon másik képet"
+
+#: media/js/utils.js:1777
+msgid "Choose a different file"
+msgstr "Válasszon másik fájlt"
+
+#: media/js/utils.js:1791
+msgid "Oops, looks like we had an error. Sorry."
+msgstr "Hoppá, hiba történt. Elnézést."
+
+#: media/js/utils.js:1852
+msgid "Choose an image to insert"
+msgstr "Válasszon egy beszúrandó képet"
+
+#: media/js/utils.js:1854
+msgid "Choose a file to insert"
+msgstr "Válasszon egy beszúrandó fájlt"
+
+#: media/js/utils.js:1867
+msgid "Allowed file types are:"
+msgstr "Az engedélyezett fájltípusok:"
+
+#: media/js/utils.js:1873
+#: media/js/tinymce/plugins/askbot_attachment/editor_plugin.js:35
+msgid "Or paste file url here"
+msgstr "Vagy illessze be a fájl URL-címét:"
+
+#: media/js/utils.js:1947
+msgid "Save"
+msgstr "Mentés"
+
+#: media/js/utils.js:2019
+msgid "saved"
+msgstr "elmentve"
+
+#: media/js/utils.js:2143
+msgid "enabled"
+msgstr "engedélyezve"
+
+#: media/js/utils.js:2145
+msgid "disabled"
+msgstr "letiltva"
+
+#: media/js/utils.js:2583
+msgid "group name"
+msgstr "csoportnév"
+
+#: media/js/utils.js:2591
+msgid "add new group"
+msgstr "új csoport hozzáadása"
+
+#: media/js/utils.js:2683
+msgid "Group %(name)s already exists. Group names are case-insensitive."
+msgstr "A csoport (%(name)s) már létezik. A csoportnevek nem különböztetik meg a kis- és nagybetűket."
+
+#: media/js/utils.js:2856
+#, c-format
+msgid "see questions tagged '%s'"
+msgstr "lásd a(z) „%s” címkéjű kérdéseket "
+
+#: media/js/utils.js:3902
+msgid "ago"
+msgstr "óta"
+
+#: media/js/utils.js:3903
+msgid "from now"
+msgstr "mostantól"
+
+#: media/js/utils.js:3905
+msgid "about a minute"
+msgstr "egy perc"
+
+#: media/js/utils.js:3906
+#, c-format
+msgid "%d minutes"
+msgstr "%d perc"
+
+#: media/js/utils.js:3907
+msgid "about an hour"
+msgstr "egy óra"
+
+#: media/js/utils.js:3908
+#, c-format
+msgid "%d hours"
+msgstr "%d óra"
+
+#: media/js/utils.js:3909 media/js/utils.js.c:4037
+msgid "yesterday"
+msgstr "tegnap"
+
+#: media/js/utils.js:3910
+#, c-format
+msgid "%d days"
+msgstr "%d nap"
+
+#: media/js/utils.js:3911
+msgid "about a month"
+msgstr "egy hónap"
+
+#: media/js/utils.js:3912
+#, c-format
+msgid "%d months"
+msgstr "%d hónap"
+
+#: media/js/utils.js:3913
+msgid "about a year"
+msgstr "egy év"
+
+#: media/js/utils.js:3914
+#, c-format
+msgid "%d years"
+msgstr "%d év"
+
+#: media/js/utils.js:4012
+msgid "Jan"
+msgstr "Jan"
+
+#: media/js/utils.js:4013
+msgid "Feb"
+msgstr "Feb"
+
+#: media/js/utils.js:4014
+msgid "Mar"
+msgstr "Már"
+
+#: media/js/utils.js:4015
+msgid "Apr"
+msgstr "Ápr"
+
+#: media/js/utils.js:4016
+msgid "May"
+msgstr "Máj"
+
+#: media/js/utils.js:4017
+msgid "Jun"
+msgstr "Jún"
+
+#: media/js/utils.js:4018
+msgid "Jul"
+msgstr "Júl"
+
+#: media/js/utils.js:4019
+msgid "Aug"
+msgstr "Aug"
+
+#: media/js/utils.js:4020
+msgid "Sep"
+msgstr "Szep"
+
+#: media/js/utils.js:4021
+msgid "Oct"
+msgstr "Okt"
+
+#: media/js/utils.js:4022
+msgid "Nov"
+msgstr "Nov"
+
+#: media/js/utils.js:4023
+msgid "Dec"
+msgstr "Dec"
+
+#: media/js/utils.js:4035
+msgid "2 days ago"
+msgstr "2 napja"
+
+#: media/js/utils.js:4042
+#, c-format
+msgid "%s hour ago"
+msgid_plural "%s hours ago"
+msgstr[0] "%s órája"
+msgstr[1] "%s órája"
+
+#: media/js/utils.js:4052
+#, c-format
+msgid "%s min ago"
+msgid_plural "%s mins ago"
+msgstr[0] "%s perce"
+msgstr[1] "%s perce"
+
+#: media/js/tinymce/plugins/askbot_attachment/editor_plugin.js:71
+msgid "Insert a file"
+msgstr "Fájl beszúrása"
+
+#: media/js/tinymce/plugins/askbot_imageuploader/editor_plugin.js:70
+msgid "Insert image"
+msgstr "Kép beszúrása"
+
+#: media/js/wmd/wmd.js:31
+msgid "bold"
+msgstr "félkövér"
+
+#: media/js/wmd/wmd.js:32
+msgid "italic"
+msgstr "dőlt"
+
+#: media/js/wmd/wmd.js:33
+msgid "link"
+msgstr "hivatkozás"
+
+#: media/js/wmd/wmd.js:34
+msgid "quote"
+msgstr "idézőjel"
+
+#: media/js/wmd/wmd.js:35
+msgid "preformatted text"
+msgstr "előre formázott szöveg"
+
+#: media/js/wmd/wmd.js:36
+msgid "image"
+msgstr "kép"
+
+#: media/js/wmd/wmd.js:37
+msgid "attachment"
+msgstr "melléklet"
+
+#: media/js/wmd/wmd.js:38
+msgid "numbered list"
+msgstr "számozott lista"
+
+#: media/js/wmd/wmd.js:39
+msgid "bulleted list"
+msgstr "felsorolásos lista"
+
+#: media/js/wmd/wmd.js:40
+msgid "heading"
+msgstr "címsor"
+
+#: media/js/wmd/wmd.js:41
+msgid "horizontal bar"
+msgstr "vízszintes vonal"
+
+#: media/js/wmd/wmd.js:42
+msgid "undo"
+msgstr "visszavonás"
+
+#: media/js/wmd/wmd.js:43 media/js/wmd/wmd.js.c:1170
+msgid "redo"
+msgstr "mégis"
+
+#: media/js/wmd/wmd.js:54
+msgid "enter image url"
+msgstr "adja meg a kép URL-címét"
+
+#: media/js/wmd/wmd.js:55
+msgid "enter url"
+msgstr "adja meg az URL-címet"
+
+#: media/js/wmd/wmd.js:56
+msgid "upload file attachment"
+msgstr "fájlmelléklet feltöltése"
+
+#: media/js/wmd/wmd.js:1837
+msgid "image description"
+msgstr "kép leírása"
+
+#: media/js/wmd/wmd.js:1840
+msgid "file name"
+msgstr "fájlnév"
+
+#: media/js/wmd/wmd.js:1844
+msgid "link text"
+msgstr "hivatkozásszöveg"
+
+#~ msgid "cannot pick own answer as best"
+#~ msgstr "sorry, you cannot accept your own answer"
+
+#~ msgid "please confirm offensive"
+#~ msgstr ""
+#~ "are you sure this post is offensive, contains spam, advertising, malicious "
+#~ "remarks, etc.?"
+
+#~ msgid "please confirm removal of offensive flag"
+#~ msgstr ""
+#~ "are you sure this post is offensive, contains spam, advertising, malicious "
+#~ "remarks, etc.?"
+
+#~ msgid "Post deleted"
+#~ msgstr "your post has been deleted"
+
+#~ msgid "Post approved"
+#~ msgstr "your post is now restored!"
+
+#~ msgid "post a comment"
+#~ msgstr "save comment"
+
+#~ msgid "%s content minchars"
+#~ msgstr "please enter more than %s characters"
+
+#~ msgid "%s title minchars"
+#~ msgstr "please enter at least %s characters"

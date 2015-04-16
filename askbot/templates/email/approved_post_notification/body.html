@@ -1,0 +1,17 @@
+{% extends "email/base_mail.html"%}
+{% import "email/macros.html" as macros %}
+{# 
+    parameters:
+    * post
+    * recipient_user - goes into footer
+#}
+{% block content %}
+    <p>{% trans %}Below is a copy of your post:{% endtrans %}</p>
+    {% if post.is_question() %}
+        <p style="font-size:16px">{{ post.thread.title }}</p>
+    {% endif %}
+    {{ post.html }}
+{% endblock %}
+{%  block footer %}
+    {% include "email/footer.html" %}
+{% endblock %}

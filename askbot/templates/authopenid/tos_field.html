@@ -1,0 +1,8 @@
+{% import "macros.html" as macros %}
+{% if tos_field %}
+    <div class="tos">
+        <label>{% trans %}Terms of service:{% endtrans %}</label>
+        <div class="tos-content">{{ settings.TERMS|convert_markdown }}</div>
+    </div>
+    {{ macros.checkbox_in_div(tos_field) }}
+{% endif %}

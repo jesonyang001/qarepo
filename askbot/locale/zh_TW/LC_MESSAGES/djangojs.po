@@ -1,0 +1,778 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Carl XuYu Su, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: askbot\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-01 12:01-0500\n"
+"PO-Revision-Date: 2014-11-01 17:05+0000\n"
+"Last-Translator: evgeny <evgeny.fadeev@gmail.com>\n"
+"Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/askbot/language/zh_TW/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: media/jquery-openid/jquery.openid.js:81
+#, c-format
+msgid "Are you sure you want to remove your %s login?"
+msgstr "您確定要移除您的 %s 登入嗎？"
+
+#: media/jquery-openid/jquery.openid.js:98
+msgid "Please add one or more login methods."
+msgstr "請加入一個或多個登入方法。"
+
+#: media/jquery-openid/jquery.openid.js:101
+msgid ""
+"You don't have a method to log in right now, please add one or more by "
+"clicking any of the icons below."
+msgstr "您沒有任何可以立刻登入的方法，請底下方任一個圖示來加入登入方法。"
+
+#: media/jquery-openid/jquery.openid.js:143
+msgid "passwords do not match"
+msgstr "密碼不相符"
+
+#: media/jquery-openid/jquery.openid.js:170
+msgid "Show/change current login methods"
+msgstr "顯示或變更目前的登入方法"
+
+#: media/jquery-openid/jquery.openid.js:235
+#, c-format
+msgid "Please enter your %s, then proceed"
+msgstr "請輸入您的 %s，接著繼續"
+
+#: media/jquery-openid/jquery.openid.js:237
+msgid "Connect your %(provider_name)s account to %(site)s"
+msgstr "連接您的 %(provider_name)s 帳號至 %(site)s"
+
+#: media/jquery-openid/jquery.openid.js:331
+#, c-format
+msgid "Change your %s password"
+msgstr "變更您的 %s 密碼"
+
+#: media/jquery-openid/jquery.openid.js:332
+msgid "Change password"
+msgstr "變更密碼"
+
+#: media/jquery-openid/jquery.openid.js:335
+#, c-format
+msgid "Create a password for %s"
+msgstr "變更 %s 的密碼"
+
+#: media/jquery-openid/jquery.openid.js:336
+msgid "Create password"
+msgstr "建立密碼"
+
+#: media/jquery-openid/jquery.openid.js:351
+msgid "Create a password-protected account"
+msgstr "建立有密碼保護的帳號"
+
+#: media/js/group_messaging.js:102 media/js/group_messaging.js.c:293
+msgid "required"
+msgstr ""
+
+#: media/js/group_messaging.js:139
+msgid "Your message:"
+msgstr "您的訊息："
+
+#: media/js/group_messaging.js:152
+msgid "send"
+msgstr ""
+
+#: media/js/group_messaging.js:164 media/js/post.js:1970
+#: media/js/post.js.c:3245 media/js/post.js.c:4808 media/js/user.js:841
+msgid "cancel"
+msgstr "取消"
+
+#: media/js/group_messaging.js:227
+msgid "Reply"
+msgstr "回覆"
+
+#: media/js/group_messaging.js:236 media/js/group_messaging.js.c:743
+msgid "message sent"
+msgstr ""
+
+#: media/js/group_messaging.js:271
+msgid "user {{str}} does not exist"
+msgid_plural "users {{str}} do not exist"
+msgstr[0] ""
+
+#: media/js/group_messaging.js:278
+msgid "cannot send message to yourself"
+msgstr ""
+
+#: media/js/group_messaging.js:323
+msgid "Recipient:"
+msgstr ""
+
+#: media/js/live_search.js:198
+msgid "To see search results, 2 or more characters may be required"
+msgstr ""
+
+#: media/js/live_search.js:220
+msgid "Ask Your Question"
+msgstr ""
+
+#: media/js/live_search.js:301
+msgid "Sorry, this tag does not exist"
+msgid_plural "Sorry, these tags do not exist"
+msgstr[0] ""
+
+#: media/js/live_search.js:315
+msgid "search or ask your question"
+msgstr ""
+
+#: media/js/post.js:28
+msgid "loading..."
+msgstr "正載入..."
+
+#: media/js/post.js:125 media/js/post.js.c:1401
+msgid "tags cannot be empty"
+msgstr "標籤不能為空白"
+
+#: media/js/post.js:131
+msgid "details are required"
+msgstr ""
+
+#: media/js/post.js:134
+#, c-format
+msgid "details must have > %s character"
+msgid_plural "details must have > %s characters"
+msgstr[0] ""
+
+#: media/js/post.js:142
+msgid "enter your question"
+msgstr ""
+
+#: media/js/post.js:145
+msgid "%(question)s must have > %(length)s character"
+msgid_plural "%(question)s must have > %(length)s characters"
+msgstr[0] ""
+
+#: media/js/post.js:168
+msgid "content cannot be empty"
+msgstr "內容不能為空白"
+
+#: media/js/post.js:171
+msgid "%(answer)s must be > %(length)s character"
+msgid_plural "%(answer)s must be > %(length)s characters"
+msgstr[0] ""
+
+#: media/js/post.js:232
+msgid "Back to the question"
+msgstr ""
+
+#: media/js/post.js:332
+msgid "Merge"
+msgstr ""
+
+#: media/js/post.js:336 media/js/post.js.c:388
+msgid "Load preview"
+msgstr ""
+
+#: media/js/post.js:348
+msgid "messages"
+msgstr ""
+
+#: media/js/post.js:387 media/js/utils.js:1456 media/js/utils.js.c:1948
+msgid "Cancel"
+msgstr "取消"
+
+#: media/js/post.js:433
+msgid "draft saved..."
+msgstr ""
+
+#: media/js/post.js:678
+msgid "insufficient privilege"
+msgstr "權力不足"
+
+#: media/js/post.js:681 media/js/post.js.c:1548
+msgid "please login"
+msgstr "請先登錄"
+
+#: media/js/post.js:684
+msgid "anonymous users cannot %(follow_questions)s"
+msgstr ""
+
+#: media/js/post.js:690
+msgid "anonymous users cannot subscribe to questions"
+msgstr "匿名使用者無法訂閱問題"
+
+#: media/js/post.js:691 media/js/post.js.c:1558
+msgid "anonymous users cannot vote"
+msgstr "匿名使用者無法投票"
+
+#: media/js/post.js:693
+msgid "anonymous users cannot flag offensive posts"
+msgstr "匿名使用者無法標記惡意文章"
+
+#: media/js/post.js:694
+msgid "confirm delete"
+msgstr "確定刪除"
+
+#: media/js/post.js:695
+msgid "anonymous users cannot delete/undelete"
+msgstr "匿名使用者不能刪除或取消刪除"
+
+#: media/js/post.js:696
+msgid "post recovered"
+msgstr "文章已復原"
+
+#: media/js/post.js:697
+msgid "post deleted"
+msgstr "文章已刪除"
+
+#: media/js/post.js:932
+msgid "sorry, you cannot %(accept_own_answer)s"
+msgstr ""
+
+#: media/js/post.js:969
+msgid "Follow"
+msgstr "跟隨"
+
+#: media/js/post.js:978 media/js/post.js.c:987
+#, c-format
+msgid "%s follower"
+msgid_plural "%s followers"
+msgstr[0] "%s 位跟隨者"
+
+#: media/js/post.js:983
+msgid "<div>Following</div><div class=\"unfollow\">Unfollow</div>"
+msgstr "<div>跟隨</div><div class=\"unfollow\">不跟隨</div>"
+
+#: media/js/post.js:1039
+msgid "remove flag"
+msgstr ""
+
+#: media/js/post.js:1073 media/js/post.js.c:1102
+msgid "flag offensive"
+msgstr ""
+
+#: media/js/post.js:1128 media/js/post.js.c:1629
+msgid "undelete"
+msgstr "取消刪除"
+
+#: media/js/post.js:1133 media/js/post.js.c:1633
+msgid "delete"
+msgstr "刪除"
+
+#: media/js/post.js:1350 media/js/post.js.c:1577
+msgid "sorry, something is not right here"
+msgstr ""
+
+#: media/js/post.js:1808
+msgid "add comment"
+msgstr "添加評註"
+
+#: media/js/post.js:1814
+msgid "save comment"
+msgstr "儲存評註"
+
+#: media/js/post.js:1854
+#, c-format
+msgid "enter at least %s characters"
+msgstr ""
+
+#: media/js/post.js:1856
+#, c-format
+msgid "enter at least %s more characters"
+msgstr ""
+
+#: media/js/post.js:1868
+#, c-format
+msgid "%s characters left"
+msgstr "還剩%s個字元"
+
+#: media/js/post.js:1870
+msgid "maximum comment length reached"
+msgstr ""
+
+#: media/js/post.js:1984
+msgid "minor edit (don't send alerts)"
+msgstr ""
+
+#: media/js/post.js:2016
+msgid "Are you sure you don't want to post this comment?"
+msgstr ""
+
+#: media/js/post.js:2051 media/js/utils.js:3904 media/js/utils.js.c:4059
+msgid "just now"
+msgstr ""
+
+#: media/js/post.js:2117
+msgid "delete this comment"
+msgstr "刪除此評註"
+
+#: media/js/post.js:2432
+msgid "confirm delete comment"
+msgstr "確認刪除評註"
+
+#: media/js/post.js:2573
+msgid "please sign in or register to post comments"
+msgstr ""
+
+#: media/js/post.js:2724
+msgid "Please enter question title (>10 characters)"
+msgstr "請輸入問題標題 (>10 個字元)"
+
+#: media/js/post.js:2776 media/js/post.js.c:4836
+msgid "Sorry, you have only read access"
+msgstr "很抱歉，您只擁有讀取權限"
+
+#: media/js/post.js:3239 media/js/post.js.c:4079 media/js/post.js.c:4268
+msgid "save"
+msgstr ""
+
+#: media/js/post.js:3363
+msgid "Enter the logo url or upload an image"
+msgstr ""
+
+#: media/js/post.js:3389
+msgid "Do you really want to remove the image?"
+msgstr ""
+
+#: media/js/post.js:3505
+msgid "change logo"
+msgstr ""
+
+#: media/js/post.js:3506
+msgid "add logo"
+msgstr ""
+
+#: media/js/post.js:3654
+#, c-format
+msgid "tag \"%s\" was already added, no need to repeat (press \"escape\" to delete)"
+msgstr ""
+
+#: media/js/post.js:3663
+#, c-format
+msgid "a maximum of %s tag is allowed"
+msgid_plural "a maximum of %s tags are allowed"
+msgstr[0] ""
+
+#: media/js/post.js:4009
+msgid "Delete category?"
+msgstr "是否刪除分類？"
+
+#: media/js/post.js:4098 media/js/utils.js:1371
+msgid "edit"
+msgstr "編輯"
+
+#: media/js/post.js:4185
+msgid "category name cannot be empty"
+msgstr ""
+
+#: media/js/post.js:4221
+msgid "already exists at the current level!"
+msgstr ""
+
+#: media/js/post.js:4257
+msgid "add category"
+msgstr ""
+
+#: media/js/post.js:4804
+msgid "save tags"
+msgstr ""
+
+#: media/js/post.js:4920
+msgid "Group name:"
+msgstr "群組名稱："
+
+#: media/js/post.js:4946
+msgid "Shared with the following users:"
+msgstr "與這些使用者共享："
+
+#: media/js/post.js:4952
+msgid "Shared with the following groups:"
+msgstr "與這些群組共享："
+
+#: media/js/tag_selector.js:14
+msgid "Tag \"<span></span>\" matches:"
+msgstr "標記 \"<span></span>\" 符合："
+
+#: media/js/tag_selector.js:84
+#, c-format
+msgid "and %s more, not shown..."
+msgstr "與 %s 項其他，不顯示..."
+
+#: media/js/user.js:205
+msgid "Please select at least one item"
+msgstr "請至少選取一個項目"
+
+#: media/js/user.js:241
+msgid "Load more items."
+msgstr ""
+
+#: media/js/user.js:386
+msgid "Looks there are some things to fix:"
+msgstr ""
+
+#: media/js/user.js:454
+msgid "Please provide description."
+msgstr ""
+
+#: media/js/user.js:457
+msgid "Please provide details."
+msgstr ""
+
+#: media/js/user.js:544
+msgid "A reason must be selected to delete one."
+msgstr ""
+
+#: media/js/user.js:661
+msgid "Please <a href=\"%(signin_url)s\">signin</a> to follow %(username)s"
+msgstr "請<a href=\"%(signin_url)s\">登入</a>才能跟隨 %(username)s"
+
+#: media/js/user.js:693
+#, c-format
+msgid "unfollow %s"
+msgstr "不跟隨 %s"
+
+#: media/js/user.js:696
+#, c-format
+msgid "following %s"
+msgstr "正跟隨 %s"
+
+#: media/js/user.js:702
+#, c-format
+msgid "follow %s"
+msgstr "跟隨 %s"
+
+#: media/js/user.js:836
+msgid "add group"
+msgstr "加入群組"
+
+#: media/js/user.js:916
+msgid "add"
+msgstr "加入"
+
+#: media/js/utils.js:81
+msgid "must be shorter than %(max_chars)s character"
+msgid_plural "must be shorter than %(max_chars)s characters"
+msgstr[0] ""
+
+#: media/js/utils.js:149
+msgid "and"
+msgstr ""
+
+#: media/js/utils.js:167
+msgid "click to close"
+msgstr "點擊以關閉"
+
+#: media/js/utils.js:670
+#, c-format
+msgid "page %s"
+msgstr ""
+
+#: media/js/utils.js:1370
+msgid "click to edit this comment"
+msgstr "點擊以編輯此評註"
+
+#: media/js/utils.js:1401
+msgid "convert to answer"
+msgstr ""
+
+#: media/js/utils.js:1454
+msgid "Ok"
+msgstr "確定"
+
+#: media/js/utils.js:1760
+#, c-format
+msgid "Uploaded file: %s"
+msgstr "已上傳檔案：%s"
+
+#: media/js/utils.js:1775
+msgid "Choose a different image"
+msgstr ""
+
+#: media/js/utils.js:1777
+msgid "Choose a different file"
+msgstr ""
+
+#: media/js/utils.js:1791
+msgid "Oops, looks like we had an error. Sorry."
+msgstr ""
+
+#: media/js/utils.js:1852
+msgid "Choose an image to insert"
+msgstr ""
+
+#: media/js/utils.js:1854
+msgid "Choose a file to insert"
+msgstr ""
+
+#: media/js/utils.js:1867
+msgid "Allowed file types are:"
+msgstr ""
+
+#: media/js/utils.js:1873
+#: media/js/tinymce/plugins/askbot_attachment/editor_plugin.js:35
+msgid "Or paste file url here"
+msgstr ""
+
+#: media/js/utils.js:1947
+msgid "Save"
+msgstr "儲存"
+
+#: media/js/utils.js:2019
+msgid "saved"
+msgstr "已儲存"
+
+#: media/js/utils.js:2143
+msgid "enabled"
+msgstr "已啟用"
+
+#: media/js/utils.js:2145
+msgid "disabled"
+msgstr "已停用"
+
+#: media/js/utils.js:2583
+msgid "group name"
+msgstr "群組名稱"
+
+#: media/js/utils.js:2591
+msgid "add new group"
+msgstr "加入新的群組"
+
+#: media/js/utils.js:2683
+msgid "Group %(name)s already exists. Group names are case-insensitive."
+msgstr ""
+
+#: media/js/utils.js:2856
+#, c-format
+msgid "see questions tagged '%s'"
+msgstr "查看標有「%s」的問題"
+
+#: media/js/utils.js:3902
+msgid "ago"
+msgstr "前"
+
+#: media/js/utils.js:3903
+msgid "from now"
+msgstr ""
+
+#: media/js/utils.js:3905
+msgid "about a minute"
+msgstr "約一分鐘"
+
+#: media/js/utils.js:3906
+#, c-format
+msgid "%d minutes"
+msgstr "%d 分鐘"
+
+#: media/js/utils.js:3907
+msgid "about an hour"
+msgstr "約一個小時"
+
+#: media/js/utils.js:3908
+#, c-format
+msgid "%d hours"
+msgstr "%d 小時"
+
+#: media/js/utils.js:3909 media/js/utils.js.c:4037
+msgid "yesterday"
+msgstr "昨天"
+
+#: media/js/utils.js:3910
+#, c-format
+msgid "%d days"
+msgstr "%d 天"
+
+#: media/js/utils.js:3911
+msgid "about a month"
+msgstr "約一個月"
+
+#: media/js/utils.js:3912
+#, c-format
+msgid "%d months"
+msgstr "%d 個月"
+
+#: media/js/utils.js:3913
+msgid "about a year"
+msgstr "約一年"
+
+#: media/js/utils.js:3914
+#, c-format
+msgid "%d years"
+msgstr "%d 年"
+
+#: media/js/utils.js:4012
+msgid "Jan"
+msgstr ""
+
+#: media/js/utils.js:4013
+msgid "Feb"
+msgstr ""
+
+#: media/js/utils.js:4014
+msgid "Mar"
+msgstr ""
+
+#: media/js/utils.js:4015
+msgid "Apr"
+msgstr ""
+
+#: media/js/utils.js:4016
+msgid "May"
+msgstr ""
+
+#: media/js/utils.js:4017
+msgid "Jun"
+msgstr ""
+
+#: media/js/utils.js:4018
+msgid "Jul"
+msgstr ""
+
+#: media/js/utils.js:4019
+msgid "Aug"
+msgstr ""
+
+#: media/js/utils.js:4020
+msgid "Sep"
+msgstr ""
+
+#: media/js/utils.js:4021
+msgid "Oct"
+msgstr ""
+
+#: media/js/utils.js:4022
+msgid "Nov"
+msgstr ""
+
+#: media/js/utils.js:4023
+msgid "Dec"
+msgstr ""
+
+#: media/js/utils.js:4035
+msgid "2 days ago"
+msgstr "2 天前"
+
+#: media/js/utils.js:4042
+#, c-format
+msgid "%s hour ago"
+msgid_plural "%s hours ago"
+msgstr[0] "%s 小時前"
+
+#: media/js/utils.js:4052
+#, c-format
+msgid "%s min ago"
+msgid_plural "%s mins ago"
+msgstr[0] "%s 分鐘前"
+
+#: media/js/tinymce/plugins/askbot_attachment/editor_plugin.js:71
+msgid "Insert a file"
+msgstr "插入檔案"
+
+#: media/js/tinymce/plugins/askbot_imageuploader/editor_plugin.js:70
+msgid "Insert image"
+msgstr ""
+
+#: media/js/wmd/wmd.js:31
+msgid "bold"
+msgstr "粗體"
+
+#: media/js/wmd/wmd.js:32
+msgid "italic"
+msgstr "斜體"
+
+#: media/js/wmd/wmd.js:33
+msgid "link"
+msgstr "連結"
+
+#: media/js/wmd/wmd.js:34
+msgid "quote"
+msgstr "引文"
+
+#: media/js/wmd/wmd.js:35
+msgid "preformatted text"
+msgstr "預先格式文字"
+
+#: media/js/wmd/wmd.js:36
+msgid "image"
+msgstr "影像"
+
+#: media/js/wmd/wmd.js:37
+msgid "attachment"
+msgstr "附件"
+
+#: media/js/wmd/wmd.js:38
+msgid "numbered list"
+msgstr "數字編號清單"
+
+#: media/js/wmd/wmd.js:39
+msgid "bulleted list"
+msgstr "項目符號清單"
+
+#: media/js/wmd/wmd.js:40
+msgid "heading"
+msgstr "標題"
+
+#: media/js/wmd/wmd.js:41
+msgid "horizontal bar"
+msgstr "水平列"
+
+#: media/js/wmd/wmd.js:42
+msgid "undo"
+msgstr "取消動作"
+
+#: media/js/wmd/wmd.js:43 media/js/wmd/wmd.js.c:1170
+msgid "redo"
+msgstr "再次動作"
+
+#: media/js/wmd/wmd.js:54
+msgid "enter image url"
+msgstr "輸入影像網址"
+
+#: media/js/wmd/wmd.js:55
+msgid "enter url"
+msgstr "輸入網址"
+
+#: media/js/wmd/wmd.js:56
+msgid "upload file attachment"
+msgstr "上傳檔案附件"
+
+#: media/js/wmd/wmd.js:1837
+msgid "image description"
+msgstr "影像描述"
+
+#: media/js/wmd/wmd.js:1840
+msgid "file name"
+msgstr "檔案名稱"
+
+#: media/js/wmd/wmd.js:1844
+msgid "link text"
+msgstr "連結文字"
+
+#~ msgid "cannot pick own answer as best"
+#~ msgstr "sorry, you cannot accept your own answer"
+
+#~ msgid "please confirm offensive"
+#~ msgstr ""
+#~ "are you sure this post is offensive, contains spam, advertising, malicious "
+#~ "remarks, etc.?"
+
+#~ msgid "please confirm removal of offensive flag"
+#~ msgstr ""
+#~ "are you sure this post is offensive, contains spam, advertising, malicious "
+#~ "remarks, etc.?"
+
+#~ msgid "Post deleted"
+#~ msgstr "your post has been deleted"
+
+#~ msgid "Post approved"
+#~ msgstr "your post is now restored!"
+
+#~ msgid "post a comment"
+#~ msgstr "save comment"
+
+#~ msgid "%s content minchars"
+#~ msgstr "please enter more than %s characters"
+
+#~ msgid "%s title minchars"
+#~ msgstr "please enter at least %s characters"

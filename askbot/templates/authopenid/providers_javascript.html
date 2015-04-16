@@ -1,0 +1,35 @@
+{% compress js %}
+<script type="text/javascript" src="{{ '/jslib/jquery.validate.min.js'|media }}"></script>
+{% endcompress %}
+{% if settings.SIGNIN_MOZILLA_PERSONA_ENABLED %}
+<script type="text/javascript" src="https://login.persona.org/include.js"></script>
+{% endif %}
+{% compress js %}
+    <script type="text/javascript" src="{{ '/js/jquery-openid/jquery.authenticator.js'|media }}"></script>
+    <script type="text/javascript" src="{{ '/js/jquery-openid/changepasswordform.js'|media }}"></script>
+{% endcompress %}
+<script type="text/javascript">
+    askbot['urls']['changePassword'] = '{% url change_password %}';
+    askbot['urls']['deleteLoginMethod'] = '{% url delete_login_method %}';
+    askbot['auth'] = {};
+    askbot['auth']['extraTokenName'] = {};
+    askbot['auth']['providerCount'] = {{ existing_login_methods|length }};
+    askbot['settings']['siteName'] = '{{ settings.APP_SHORT_NAME }}';
+    {% for login_provider in major_login_providers %}
+        {% if login_provider.extra_token_name %}
+            askbot['auth']['extraTokenName']['{{ login_provider.name }}'] = '{{ login_provider.extra_token_name|escapejs }}';
+        {% endif %}
+    {% endfor %}
+    {% for login_provider in minor_login_providers %}
+        {% if login_provider.extra_token_name %}
+            askbot['auth']['extraTokenName']['{{ login_provider.name }}'] = '{{ login_provider.extra_token_name|escapejs }}';
+        {% endif %}
+    {% endfor %}
+    askbot['settings']['signinAlwaysShowLocalLogin'] = {{ settings.SIGNIN_ALWAYS_SHOW_LOCAL_LOGIN|as_js_bool }};
+    askbot['settings']['useLdapForPasswordLogin'] = {{ settings.USE_LDAP_FOR_PASSWORD_LOGIN|as_js_bool}};
+    $('body').authenticator();
+    (function() {
+        var form = new ChangePasswordForm();
+        form.decorate($('body'));//a hack
+    })();
+</script>

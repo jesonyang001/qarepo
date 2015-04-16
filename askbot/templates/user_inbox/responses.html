@@ -1,0 +1,35 @@
+{% extends "user_inbox/base.html" %}
+{% import "macros.html" as macros %}
+{% block profilesection %}
+    {% trans %}notifications{% endtrans %}
+{% endblock %}
+{% block inbox_content %}
+    {% if messages %}
+    <div class="js-manage-messages">
+        <a class="js-mark-as-seen">{% trans %}mark seen{% endtrans %}</a> |
+        <a class="js-delete">{% trans %}delete{% endtrans %}</a> 
+        {% trans %}select:{% endtrans %} 
+        <a class="js-select-all">{% trans %}all{% endtrans %}</a> |
+        <a class="js-select-none">{% trans %}none{% endtrans %}</a>
+    </div>
+    {% endif %}
+    <p class="action-status"><span></span></p>
+    <div class="messages">
+    {% for message in messages %}{# messages are grouped by question, using the "nested_messages" #}
+        <div class="message{% if message.is_new %} highlight new{% else %} seen{% endif %}"
+            data-message-id="{{ message.id }}"
+        >
+            <h2>"{{ message.title.strip()|escape}}"</h2>
+            {{ macros.inbox_message_snippet(message) }}
+        </div>
+        {# "nested" messages are further response messages to the same question #}
+        {% for followup_message in message.followup_messages %}
+            <div class="message{% if followup_message.is_new %} highlight new{% else %} seen{% endif %}"
+                data-message-id="{{ followup_message.id }}"
+            >
+                {{ macros.inbox_message_snippet(followup_message) }}
+            </div>
+        {% endfor %}
+    {% endfor %}
+    </div>
+{% endblock %}

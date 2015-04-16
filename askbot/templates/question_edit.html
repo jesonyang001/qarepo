@@ -1,0 +1,132 @@
+{% extends "two_column_body.html" %}
+{% import "macros.html" as macros %}
+<!-- question_edit.html -->
+{% block title %}{% spaceless %}{{ settings.WORDS_EDIT_QUESTION|escape }}{% endspaceless %}{% endblock %}
+{% block forestyle %}
+    <link rel="stylesheet" type="text/css" href="{{"/wmd/wmd.css"|media}}" />
+{% endblock %}
+{% block content %}
+<div class="section-title">{{ settings.WORDS_EDIT_QUESTION|escape }} [<a href="{{ question.get_absolute_url() }}">{% trans %}back{% endtrans %}</a>]</div>
+<form id="fmedit" action="{% url edit_question question.id %}" method="post" >{% csrf_token %}
+    {% if revision_form.revision.errors %}{{ revision_form.revision.errors.as_ul() }}{% endif %}
+    {{ revision_form.revision }}
+    <input type="hidden" id="select_revision" name="select_revision" value="false"/>
+
+    <div class="form-item form-group">
+        <label for="id_title" >
+            {{ settings.WORDS_QUESTION_IN_ONE_SENTENCE|escape }}
+            {% if form.title.errors %}
+                {{ form.title.errors }}
+            {% endif %}
+        </label>
+        {{ form.title }}
+    </div>
+
+    {{ macros.edit_post(form, post_html=revision.text) }}
+
+    {% include "widgets/tags_field.html" %}
+    <div class="question-options">
+        {% if settings.WIKI_ON and question.wiki == False %}
+            {{ macros.checkbox_in_div(form.wiki) }}
+        {% endif %}
+        {% if settings.ENABLE_EMAIL_ALERTS %}
+            {{ macros.checkbox_in_div(form.suppress_email) }}
+        {% endif %}
+        {% if form.can_edit_anonymously() %}
+            {{ macros.checkbox_in_div(form.reveal_identity) }}
+        {% endif %}
+        {% if settings.GROUPS_ENABLED and
+            request.user.is_authenticated() and
+            request.user.can_make_group_private_posts()
+        %}
+            {{ macros.checkbox_in_div(form.post_privately) }}
+        {% endif %}
+
+<!--        {% if settings.MULTILINGUAL %}
+        <div class="lang-selector">
+            <label for="id_language">{% trans %}Change language{% endtrans %}</label>
+            {{ form.language }}
+        </div>
+        {% endif %}
+-->
+        {% set post_form=form %}
+        {% include "widgets/proxy_author_fields.html" %}
+    </div>
+    {% if form.recaptcha %}
+        <div>{{ macros.form_field_with_errors(form.recaptcha) }}</div>
+        <div class="clearfix"></div>
+    {% endif %}
+    <input id="edit_post_form_submit_button" type="submit" value="{% trans %}Save edit{% endtrans %}" class="large submit" />
+    <input type="button" value="{% trans %}Cancel{% endtrans %}" class="large submit" onclick="history.back(-1);" />
+</form>
+{% endblock %}
+
+{% block sidebar %}
+<div id ="tips" class="box">
+    <h2>{% trans %}Tips{% endtrans %}</h2>
+    {% include "widgets/question_edit_tips.html" %}
+</div>
+{% if settings.EDITOR_TYPE == 'markdown' %}
+    {% include "/widgets/markdown_help.html" %}
+{% endif %}
+{% endblock %}
+
+{% block endjs %}
+    {% include "meta/editor_data.html" %}
+    {% compress js %}
+    <script type="text/javascript" src="{{ '/jslib/editor.js'|media }}"></script>
+    {% endcompress %}
+    {% if mandatory_tags %}
+        {% include "meta/mandatory_tags_js.html" %}
+    {% endif %}
+    {% compress js %}
+    <script type="text/javascript" src="{{ '/jslib/jquery.validate.min.js'|media }}"></script>
+    <script type="text/javascript" src="{{ '/jslib/prettify.js'|media }}"></script>
+    <script type="text/javascript" src="{{ '/js/post.js'|media }}"></script>
+    {% endcompress %}
+    {% if settings.EDITOR_TYPE == 'markdown' %}
+        {% include "meta/markdown_javascript.html" %}
+    {% endif %}
+    <script type="text/javascript">
+    //todo move javascript out
+    $(document).ready(function(){
+        $('#editor').TextAreaResizer();
+        //highlight code synctax when editor has new text
+        $("#editor").typeWatch({
+            highlight: false,
+            wait: 3000,
+            captureLength: 5,
+            callback: lanai.highlightSyntax
+        });
+        //toggle preview of editor
+        var display = true;
+        var txt = "[{% trans %}hide preview{% endtrans %}]";
+        $('#pre-collapse').text(txt);
+        $('#pre-collapse').bind('click', function(){
+            txt = display ? "[{% trans %}show preview{% endtrans %}]" : "[{% trans %}hide preview{% endtrans %}]";
+            display = !display;
+            $('#previewer').toggle();
+            $('#pre-collapse').text(txt);
+        });
+
+        {{ macros.tag_autocomplete_js(id = '#id_tags') }}
+
+        setupFormValidation(
+                    $("#fmedit"),
+                    CPValidator.getQuestionFormRules(),
+                    CPValidator.getQuestionFormMessages()
+        );
+
+        $('#id_revision').unbind().change(function(){
+            $('#select_revision').val('true');
+            $('#edit_post_form_submit_button').click();
+        });
+        lanai.highlightSyntax();
+
+    });
+    </script>
+    {% if settings.TAG_SOURCE == 'category-tree' %}
+        {% include "meta/category_tree_js.html" %}
+    {% endif %}
+{% endblock %}
+<!-- end question_edit.html -->

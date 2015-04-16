@@ -1,0 +1,17 @@
+{% extends "user_inbox/base.html" %}
+{% import "macros.html" as macros %}
+{% block before_css %}
+    {{ super() }}
+    {% compress css %}
+    <link href="{{ '/style/group_messaging.css'|media }}" rel="stylesheet" type="text/css" />
+    {% endcompress %}
+{% endblock %}
+{% block profilesection %}{% trans %}private messages{% endtrans %}{% endblock %}
+{% block inbox_content %}
+    {% include group_messaging_template_name %}
+{% endblock %}
+{% block userjs %}
+    {% compress js %}
+    <script type="text/javascript" src="{{ '/js/group_messaging.js'|media }}"></script>
+    {% endcompress %}
+{% endblock %}

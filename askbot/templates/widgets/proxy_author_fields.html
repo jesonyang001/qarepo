@@ -1,0 +1,29 @@
+{% if user and user.is_authenticated() and user.is_administrator() %}
+    {# admin can post answers or questions on behalf of anyone. #}
+    <table class="proxy-user-info">
+        <tbody>
+            <tr><td colspan="2">
+                <label>
+                    {% trans %}To post on behalf of someone else, enter user name <strong>and</strong> email below.{% endtrans %}
+                </label>
+            </td></tr>
+            <tr>
+                <td>
+                    <div class="form-item">
+                        <input id="id_post_author_username" name="post_author_username" type="text" 
+                            placeholder="{% trans %}User name{% endtrans %}" autocomplete="off"/>
+                    </div>
+                    <div class="form-item">
+                        <input id="id_post_author_email" name="post_author_email" type="text" 
+                            placeholder="{% trans %}Email address{% endtrans %}">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <span class="form-error">{{ post_form.post_author_username.errors }}</span>
+                    <span class="form-error">{{ post_form.post_author_email.errors }}</span>
+                </td>
+        </tbody>
+    </table>
+{% endif %}
