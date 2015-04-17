@@ -39,12 +39,12 @@ msgstr "-"
 #: feed.py:35
 #, python-format
 msgid "Individual %(question)s feed"
-msgstr ""
+msgstr "个人%(question)s反馈"
 
 #: feed.py:108
 #, python-format
 msgid "Latest %(question)s feed"
-msgstr ""
+msgstr "最近%(question)s反馈"
 
 #: forms.py:164
 msgid "select country"
@@ -89,12 +89,12 @@ msgstr[0] "至少需要 %d 个字符"
 #, python-format
 msgid ""
 "The %(question)s is too long, maximum allowed size is %(length)d characters"
-msgstr ""
+msgstr "这%(question)s太长，最多允许%(length)d个字符"
 
 #: forms.py:300
 #, python-format
 msgid "The %(question)s is too long, maximum allowed size is %(length)d bytes"
-msgstr ""
+msgstr "这%(question)s太长，最多允许%(length)d个字节"
 
 #: forms.py:329
 msgid "content"
@@ -102,7 +102,7 @@ msgstr "内容"
 
 #: forms.py:333
 msgid "post"
-msgstr ""
+msgstr "贴子"
 
 #: forms.py:340
 #, python-format
@@ -398,7 +398,7 @@ msgstr "问题"
 
 #: urls.py:52 conf/words.py:264
 msgid "question"
-msgstr ""
+msgstr "问题"
 
 #: urls.py:79
 msgid "tags/"
