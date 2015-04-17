@@ -68,7 +68,7 @@ msgstr[0] "至少需要 %d 个单词"
 #, python-format
 msgid "must be < %d word"
 msgid_plural "must be < %d words"
-msgstr[0] "最多 %d 个单词"
+msgstr[0] "最多%d个单词"
 
 #: forms.py:244
 msgid "minor edit (don't send alerts)"
