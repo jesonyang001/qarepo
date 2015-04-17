@@ -108,7 +108,7 @@ msgstr "贴子"
 #, python-format
 msgid "%(post)s content must be > %(count)d character"
 msgid_plural "%(post)s content must be > %(count)d characters"
-msgstr[0] ""
+msgstr[0] "%(post)s内容必须大于%(count)d个字符"
 
 #: forms.py:388
 #, python-format
