@@ -54,6 +54,7 @@ QUESTION_PAGE_BASE_URL = getattr(
 APP_PATH = os.path.dirname(__file__)
 urlpatterns = patterns('',
     url(r'^$', views.readers.index, name='index'),
+    url(r'^home/', views.readers.index, name='index'),
     # BEGIN Questions (main page) urls. All this urls work both normally and through ajax
     url(
         # Note that all parameters, even if optional, are provided to the view. Non-present ones have None value.

@@ -28,8 +28,8 @@
             #}
             <table width="100%">
                 <tr>
-                    {# width 1 means that cell will expand just enough to fit the contents #}
-                    <td width="1"><a id="homeButton" href="{% url questions %}"><i class="fa fa-home"></i></a></td>
+                    <!--{# width 1 means that cell will expand just enough to fit the contents #}
+                    <td width="1"><a id="homeButton" href="{% url questions %}"><i class="fa fa-home"></i></a></td>-->
                     <td width="1">{% include "widgets/scope_nav.html" %}</td>
                     {# width * means that the cell takes the remaining table width #}
                     <td width="*" class="search-bar">{% include "widgets/search_bar.html" %}</td> 
@@ -41,5 +41,9 @@
                 </tr>
             </table>
         </form>
+
+        <div id="metaNav">
+            {% include "widgets/meta_nav.html" %}
+        </div>
     </div>
 </div>

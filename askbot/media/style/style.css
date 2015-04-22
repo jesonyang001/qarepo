@@ -323,7 +323,7 @@ body.user-messages {
 }
 #logo img {
   padding: 5px 0px 5px 0px;
-  height: 75px;
+  height: 38px;
   width: auto;
   float: left;
 }
@@ -445,7 +445,9 @@ body.user-messages {
 #metaNav a.special:hover {
   text-decoration: underline;
 }
-#metaNav #navTags {
+
+/*
+  #metaNav #navTags {
   background: 0px -95px url(../images/sprites.png) no-repeat;
 }
 #metaNav #navUsers, #metaNav #navGroups {
@@ -454,6 +456,8 @@ body.user-messages {
 #metaNav #navBadges {
   background: 3px -170px url(../images/sprites.png) no-repeat;
 }
+*/
+
 #metaNav a.group-name {
   padding: 0px;
   float: none;
@@ -4712,7 +4716,7 @@ td.setting-input textarea {
   #metaNav {
     float: left;
   }
-  #metaNav a#navUsers, #metaNav a#navTags, #metaNav a#navGroups {
+  #metaNav a#navQuestions, #metaNav a#navUsers, #metaNav a#navTags, #metaNav a#navGroups {
     background: none;
     color: #d0e296;
     font-size: 16px;

@@ -1,9 +1,16 @@
 {% import "macros.html" as macros%}
 <a 
+  id="navQuestions"
+  href="{% url questions %}"
+  {% if active_tab == 'questions' %}class="on"{% endif %}
+>{% trans %}questions{% endtrans %}</a>
+
+<a 
   id="navTags"
   href="{% url tags %}"
   {% if active_tab == 'tags' %}class="on"{% endif %}
 >{% trans %}tags{% endtrans %}</a>
+
 {% if settings.GROUPS_ENABLED %}
 <span class="dropdown groups-dropdown">
 <a
@@ -20,6 +27,7 @@
   {% if active_tab == 'users' %}class="on"{% endif %}
 >{% trans %}users{% endtrans %}</a>
 {% endif %}
+
 {% if settings.BADGES_MODE == 'public' %}
 <a 
   id="navBadges"
