@@ -7,7 +7,7 @@
             '%s'|format(settings.UNANSWERED_SCOPE_ENABLED) + '-' +
             '%s'|format((request.user.is_authenticated() and settings.FOLLOWED_SCOPE_ENABLED))
         %}
-        <form
+        <form 
             {% if active_tab == "tags" %}
                 action="{% url tags %}" 
             {% elif page_class == 'user-profile-page' %}
@@ -26,24 +26,17 @@
                 We had hard time making this layout work without tables.
                 Please suggest if there is a better way.
             #}
-            <table width="100%">
-                <tr>
-                    <!--{# width 1 means that cell will expand just enough to fit the contents #}
-                    <td width="1"><a id="homeButton" href="{% url questions %}"><i class="fa fa-home"></i></a></td>-->
-                    <td width="1">{% include "widgets/scope_nav.html" %}</td>
-                    {# width * means that the cell takes the remaining table width #}
-                    <td width="*" class="search-bar">{% include "widgets/search_bar.html" %}</td> 
-                    {% if settings.ASK_BUTTON_ENABLED %}
-                    <td width="1">
-                        {% include "widgets/ask_button.html" %}            
-                    </td>
-                    {% endif %}
-                </tr>
-            </table>
+
+            {% include "widgets/search_bar.html" %}
         </form>
 
+        {% if settings.ASK_BUTTON_ENABLED %}
+            <div id="askYourQuestion">{% include "widgets/ask_button.html" %}</div>
+        {% endif %}
+        
         <div id="metaNav">
             {% include "widgets/meta_nav.html" %}
         </div>
+        
     </div>
 </div>

@@ -12,20 +12,20 @@
 >{% trans %}tags{% endtrans %}</a>
 
 {% if settings.GROUPS_ENABLED %}
-<span class="dropdown groups-dropdown">
-<a
-  id="navGroups" 
-  {% if active_tab == 'groups' %}class="on"{% endif %}
-  href="{% url groups %}" data-target="#" >
-  {% trans %}people & groups{% endtrans %}
-</a>
-</span>
-{%else%}
-<a 
-  id="navUsers"
-  href="{% url users %}"
-  {% if active_tab == 'users' %}class="on"{% endif %}
->{% trans %}users{% endtrans %}</a>
+  <span class="dropdown groups-dropdown">
+  <a
+    id="navGroups" 
+    {% if active_tab == 'groups' %}class="on"{% endif %}
+    href="{% url groups %}" data-target="#" >
+    {% trans %}people & groups{% endtrans %}
+  </a>
+  </span>
+{% else %}
+  <a 
+    id="navUsers"
+    href="{% url users %}"
+    {% if active_tab == 'users' %}class="on"{% endif %}
+  >{% trans %}users{% endtrans %}</a>
 {% endif %}
 
 {% if settings.BADGES_MODE == 'public' %}

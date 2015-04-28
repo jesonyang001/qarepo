@@ -4,6 +4,10 @@
 /* General styles for gradients */
 /* Receive exactly positions for background Sprite  */
 /* CSS3 Elements */
+@font-face{
+  font-family: Myriad Pro Light;
+  src: url(../fonts/MyriadPro-Light.otf);
+}
 .border-box {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -310,9 +314,10 @@ body.user-messages {
 }
 /* ----- Header, check blocks/header.html ----- */
 #header {
+  height: 38px;
   margin-top: 0px;
-  background: #16160f;
-  font-family: 'Open Sans Condensed', Arial, sans-serif;
+  background: #000000;
+  font-family: Arial,'Helvetica','sans-serif';
 }
 .content-wrapper {
   /* wrapper positioning class */
@@ -322,7 +327,7 @@ body.user-messages {
   position: relative;
 }
 #logo img {
-  padding: 5px 0px 5px 0px;
+  padding: 0px 0px 0px 0px;
   height: 38px;
   width: auto;
   float: left;
@@ -378,18 +383,18 @@ body.user-messages {
 }
 #userToolsNav {
   /* Navigation bar containing login link or user information, check widgets/user_navigation.html*/
-
-  height: 20px;
-  padding-bottom: 5px;
+  height: 38px;
+  padding-bottom: 0px;
   white-space: nowrap;
-  font-size: 16px;
+  font-size: 13px;
+  line-height: 38px;
 }
 #userToolsNav a {
-  height: 35px;
+  height: 38px;
   text-align: right;
   margin-left: 20px;
-  text-decoration: underline;
-  color: #d0e296;
+  /*text-decoration: underline;*/
+  color: #eeeeee;
 }
 #userToolsNav a:first-child {
   margin-left: 0;
@@ -410,30 +415,33 @@ body.user-messages {
 }
 #metaNav {
   /* Top Navigation bar containing links for tags, people and badges, check widgets/header.html */
-
   float: right;
-  /* for #header.with-logo it is modified */
 
-  margin-right: 7px;
+  /* for #header.with-logo it is modified */
+  margin: 0;
+  height: 38px;
+  line-height: 38px;
 }
 #metaNav a {
-  color: #e2e2ae;
-  padding: 0px 0px 0px 35px;
-  height: 35px;
-  line-height: 25px;
-  margin: 5px 0px 0px 10px;
-  font-size: 18px;
-  font-weight: 100;
-  text-decoration: none;
-  display: block;
-  float: left;
+  height: 38px;
+  line-height: 38px;
+  margin: 5px;
+  padding: 5px;
+  background: #73a550;
+  border-radius: 5px;
+
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 #metaNav a:hover {
   text-decoration: underline;
+  background: #48712b;
 }
 #metaNav a.on {
   font-weight: bold;
-  color: #FFF;
+  background: #48712b;
   text-decoration: none;
 }
 #metaNav a.special {
@@ -504,50 +512,42 @@ body.user-messages {
 }
 #secondaryHeader {
   /* Div containing Home button, scope navigation, search form and ask button, check blocks/secondary_header.html */
-
-  height: 55px;
-  background: #e9e9e1;
-  border-bottom: #d3d3c2 1px solid;
-  border-top: #fcfcfc 1px solid;
-  margin-bottom: 10px;
-  font-family: 'Open Sans Condensed', Arial, sans-serif;
+  height: 38px;
+  line-height: 38px;
+  background: #eeeeee;
+  /*border-bottom: #d3d3c2 1px solid;*/
+  /*border-top: #fcfcfc 1px solid;*/
+  font-family: Arial,'Helvetica','sans-serif';
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
 #secondaryHeader td {
   padding: 0;
+  height: 30px;
+  line-height: 30px;
 }
 #secondaryHeader td.search-bar {
-  padding: 0 32px 0 15px;
+  padding: 0px 0px 0px 0px;
   position: relative;
+  width: 333px;
 }
-#homeButton {
-  border-right: #afaf9e 1px solid;
-  height: 54px;
-  width: 43px;
-  display: block;
+#scopeNav {
+  width: 100%;
   float: left;
-}
-#homeButton i {
-  color: #7a7a7b;
-  font-size: 26px;
-  line-height: 54px;
-  margin-left: 5px;
-}
-#homeButton i:hover {
-  color: #444;
+  border-bottom: 1px solid #ccc;
 }
 .scope-selector {
-  display: inline-block;
-  font-size: 20px;
+  font-size: 24px;
+  font-family: "Myriad Pro Light",Arial,Helvetica,sans-serif;
   color: #7a7a6b;
-  height: 55px;
-  line-height: 55px;
-  margin-left: 16px;
+  text-transform: capitalize;
+  height: 38px;
+  line-height: 38px;
+  margin: 0px;
+  padding: 5px;
 }
 .scope-selector.on {
-  background: url(../images/scopearrow.png) no-repeat center 41px;
 }
 .scope-selector.ask-message {
   font-size: 24px;
@@ -569,13 +569,15 @@ body.user-messages {
 }
 #searchBar {
   /* Main search form , check widgets/search_bar.html */
-
   border: 1px solid #c9c9b5;
   background: white;
-  height: 41px;
   z-index: 1000;
   position: relative;
-  width: 100%;
+  height: 30px;
+  width: 333px;
+  margin: 3px 0 3px 0;
+  float: left;
+
   /* the guts are absolute-positioned */
 
 }
@@ -592,17 +594,17 @@ body.user-messages {
 
 }
 #searchBar input.searchInput {
-  font-size: 22px;
+  font-size: 13px;
   height: 26px;
   line-height: 26px;
-  font-weight: 300;
+  font-weight: 120;
   background: transparent;
   border: 0px;
   color: #484848;
   font-family: Arial;
   width: 100%;
-  margin: 8px 0 6px 0;
-  padding: 0 80px 0 8px;
+  margin: 0 0 0 0;
+  padding: 0 13px 0 13px;
   top: 0;
   left: 0;
   -webkit-box-shadow: 0 0 0 #929292;
@@ -630,7 +632,7 @@ body.user-messages {
   top: 0;
 }
 #searchBar input[type="button"].cancelSearchBtn {
-  right: 39px;
+  right: 13px;
   top: 0;
 }
 .search-drop-menu {
@@ -685,16 +687,12 @@ body.user-messages {
   color: #ccc;
 }
 input[type="submit"].searchBtn {
-  font-size: 10px;
-  color: #666;
-  background-color: #eee;
-  height: 41px;
-  border: #FFF 1px solid;
-  line-height: 22px;
-  text-align: center;
-  margin: 0;
-  width: 48px;
-  background: -98px -36px url(../images/sprites.png) no-repeat;
+  height: 13px;
+  line-height: 13px;
+  margin: 8.5px ;
+  width: 13px;
+  /*background: -98px -36px url(../images/search_box_icon.png) no-repeat;*/
+  background: 0 0 url(../images/search_box_icon.png) no-repeat;
   border-radius: 0;
   -ms-border-radius: 0;
   -moz-border-radius: 0;
@@ -712,7 +710,7 @@ input[type="submit"].searchBtn {
 .meta input[type="submit"].searchBtn,
 .openid-signin input[type="submit"].searchBtn,
 .users-page input[type="submit"].searchBtn {
-  margin-top: 1px;
+  margin: 8.5;
 }
 .badge-list .placeholder {
   background: #aaa;
@@ -770,14 +768,14 @@ input[type="submit"].searchBtn:hover {
   background-image: none;
   background-image: none;
   background-image: none;
-  background: url(../images/sprites.png) no-repeat -146px -36px !important;
+  background: url(../images/search_box_icon.png) no-repeat 0 0 !important;
 }
 input[type="button"].cancelSearchBtn {
-  font-size: 30px !important;
+  font-size: 13px !important;
   color: #aaa;
   background: #fff !important;
-  height: 37px !important;
-  line-height: 37px;
+  height: 30px !important;
+  line-height: 30px;
   border: 0px;
   -webkit-box-shadow: 0 0 0 #929292;
   -moz-box-shadow: 0 0 0 #929292;
@@ -788,7 +786,7 @@ input[type="button"].cancelSearchBtn {
   -webkit-border-radius: 0;
   -khtml-border-radius: 0;
   text-align: center;
-  width: 35px !important;
+  width: 13px !important;
   cursor: pointer;
   z-index: 10001;
 }
@@ -917,29 +915,28 @@ form.ajax-file-upload img.spinner {
   bottom: 6px;
   left: 10px;
 }
+#askYourQuestion{
+  width: auto;
+  float: left;
+}
 #askButton {
   /* check blocks/secondary_header.html and widgets/ask_button.html*/
-
-  float: right;
-  font-size: 20px;
-  height: 42px;
-  line-height: 44px;
-  margin: -1px 0 0 0;
-  text-transform: uppercase;
-  width: 200px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  height: 38px;
+  line-height: 38px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background: #73a550;
   /* to match width of sidebar */
-
 }
 .search-drop-menu {
   width: 100%;
 }
 .ask-page .search-drop-menu, body.anon.ask-page .search-drop-menu {
   padding: 5px 10px 6px 0;
-}
-#scopeNav {
-  height: 54px;
-  display: inline-block;
-  white-space: nowrap;
 }
 /* ----- Content layout, check two_column_body.html or one_column_body.html ----- */
 #ContentLeft, #ContentRight, #ContentFull {
@@ -992,7 +989,7 @@ form.ajax-file-upload img.spinner {
   color: #656565;
   padding-right: 10px;
   margin-bottom: 10px;
-  font-family: 'Open Sans Condensed', Arial, sans-serif;
+  font-family: Arial,'Helvetica','sans-serif';
   width: 190px;
 }
 .box h3 {
@@ -1000,7 +997,7 @@ form.ajax-file-upload img.spinner {
   font-size: 18px;
   text-align: left;
   font-weight: normal;
-  font-family: 'Open Sans Condensed', Arial, sans-serif;
+  font-family: Arial,'Helvetica','sans-serif';
   padding-left: 0px;
 }
 .box .contributorback {
@@ -1223,6 +1220,7 @@ form.ajax-file-upload img.spinner {
   float: right;
   font-family: Georgia, serif;
   font-size: 16px;
+  clear: both;
 }
 .rss:hover {
   color: #F4A731 !important;
@@ -1293,7 +1291,7 @@ ul#searchTags {
   padding-left: 0;
   margin-bottom: 7px;
   display: block;
-  font-family: 'Open Sans Condensed', Arial, sans-serif;
+  font-family: 'helvetica neue', sans-serif;
 }
 .short-summary a {
   color: #464646;
@@ -1349,13 +1347,16 @@ ul#searchTags {
   border: #dbdbd4 1px solid;
 }
 .short-summary .votes {
-  background: url(../images/vote-background.png) repeat-x;
+  /*background: url(../images/vote-background.png) repeat-x;*/
+  border-radius: 5px;
 }
 .short-summary .answers {
-  background: url(../images/answers-background.png) repeat-x;
+  /*background: url(../images/answers-background.png) repeat-x;*/
+  border-radius: 5px;
 }
 .short-summary .views {
-  background: url(../images/view-background.png) repeat-x;
+  /*background: url(../images/view-background.png) repeat-x;*/
+  border-radius: 5px;
 }
 .short-summary .no-votes .item-count {
   color: #b1b5b6;
@@ -2865,11 +2866,12 @@ ul.js-related-tags li {
   padding-left: 0px;
   font-size: 16px;
 }
+.content-wrapper form,
 .meta form,
 .users-page form,
 .user-profile-edit-page form,
 .user-profile-page form {
-  margin-bottom: 15px;
+  margin: 0px;
 }
 .meta input[type="text"],
 .users-page input[type="text"],
@@ -3034,7 +3036,7 @@ ul.js-related-tags li {
   display: none;
 }
 .openid-signin form {
-  margin-bottom: 5px;
+  margin: 0px;
 }
 #local_login_buttons input[type="text"],
 #password-fs input[type="text"],

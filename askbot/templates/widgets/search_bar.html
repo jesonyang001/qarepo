@@ -17,18 +17,15 @@
         autocomplete="off"
         value="{{ query|default_if_none('')|escape }}" 
         name="query" 
-        placeholder="{% trans %}search or ask your question{% endtrans %}"
+        {% if active_tab == "tags" %}
+            placeholder="{% trans %}search tag{% endtrans %}"
+        {% elif active_tab == "users" %}
+            placeholder="{% trans %}search user{% endtrans %}"
+        {% endif %}
+        placeholder="{% trans %}search question{% endtrans %}"
         id="keywords"
     />
     <input type="submit" value="" name="search" class="searchBtn" />
-    <input type="button"
-        value="X"
-        name="reset_query"
-        class="cancelSearchBtn"
-        {% if not query %}{# query is only defined by questions view (active_tab) #}
-            style="display: none;"
-        {% endif %}
-    />
 </div>
 {% endspaceless %}
 {% endif %}
