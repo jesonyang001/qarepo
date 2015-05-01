@@ -327,8 +327,9 @@ body.user-messages {
   position: relative;
 }
 #logo img {
+  margin: 4px 0 4px 0;
   padding: 0px 0px 0px 0px;
-  height: 38px;
+  height: 30px;
   width: auto;
   float: left;
 }
@@ -354,12 +355,12 @@ body.user-messages {
   background: #666 !important;
 }
 .lang-nav a {
-  background: grey;
+  background: gray;
   height: 22px !important;
   text-align: left !important;
 }
 .lang-nav ul {
-  background: grey;
+  background: gray;
   display: none;
   list-style: none;
   margin: 0;
@@ -371,7 +372,7 @@ body.user-messages {
   position: absolute;
 }
 .lang-nav li {
-  background: grey;
+  background: gray;
   color: #707070;
   display: block;
 }
@@ -416,32 +417,38 @@ body.user-messages {
 #metaNav {
   /* Top Navigation bar containing links for tags, people and badges, check widgets/header.html */
   float: right;
-
   /* for #header.with-logo it is modified */
   margin: 0;
-  height: 38px;
-  line-height: 38px;
+  height: 60px;
+  line-height: 60px;
 }
 #metaNav a {
-  height: 38px;
-  line-height: 38px;
-  margin: 5px;
-  padding: 5px;
-  background: #73a550;
-  border-radius: 5px;
-
-  color: #ffffff;
+  height: 26px;
+  line-height: 26px;
+  margin: 0;
+  padding: 0 5px 0 5px;
+  /*background-color: #73a550;*/
+  /*border-top-left-radius: 5px;*/
+  /*border-top-right-radius: 5px;*/
+  border-radius: 3px;
+  border: 1px solid #d5d5d5;
+  display: inline-block;
+  color: #333;
   font-size: 14px;
   font-weight: bold;
   text-transform: capitalize;
 }
 #metaNav a:hover {
   text-decoration: underline;
-  background: #48712b;
+  /*background-color: #48712b;*/
+  background-color: #ddd;
+  color: #333;
 }
 #metaNav a.on {
   font-weight: bold;
-  background: #48712b;
+  /*background-color: #48712b;*/
+  background-color: #ddd;
+  color: #333;
   text-decoration: none;
 }
 #metaNav a.special {
@@ -512,15 +519,11 @@ body.user-messages {
 }
 #secondaryHeader {
   /* Div containing Home button, scope navigation, search form and ask button, check blocks/secondary_header.html */
-  height: 38px;
-  line-height: 38px;
-  background: #eeeeee;
-  /*border-bottom: #d3d3c2 1px solid;*/
-  /*border-top: #fcfcfc 1px solid;*/
-  font-family: Arial,'Helvetica','sans-serif';
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+  height: 60px;
+  line-height: 60px;
+  background: #F5F5F5;
+  font-family: Arial,Helvetica,sans-serif;
+  /*border-bottom: 1px solid #ccc;*/
 }
 #secondaryHeader td {
   padding: 0;
@@ -532,15 +535,33 @@ body.user-messages {
   position: relative;
   width: 333px;
 }
+#askYourQuestion{
+  width: auto;
+  float: left;
+}
+#askButton {
+  /* check blocks/secondary_header.html and widgets/ask_button.html*/
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  height: 60px;
+  line-height: 60px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 3px;
+  background: #73a550;
+  /* to match width of sidebar */
+}
 #scopeNav {
   width: 100%;
+  height: 38px
   float: left;
   border-bottom: 1px solid #ccc;
 }
 .scope-selector {
   font-size: 24px;
   font-family: "Myriad Pro Light",Arial,Helvetica,sans-serif;
-  color: #7a7a6b;
+  color: #555555;
   text-transform: capitalize;
   height: 38px;
   line-height: 38px;
@@ -548,6 +569,7 @@ body.user-messages {
   padding: 5px;
 }
 .scope-selector.on {
+  color: #333;
 }
 .scope-selector.ask-message {
   font-size: 24px;
@@ -575,7 +597,7 @@ body.user-messages {
   position: relative;
   height: 30px;
   width: 333px;
-  margin: 3px 0 3px 0;
+  margin: 15px 0 15px 0;
   float: left;
 
   /* the guts are absolute-positioned */
@@ -693,6 +715,7 @@ input[type="submit"].searchBtn {
   width: 13px;
   /*background: -98px -36px url(../images/search_box_icon.png) no-repeat;*/
   background: 0 0 url(../images/search_box_icon.png) no-repeat;
+  border: 0;
   border-radius: 0;
   -ms-border-radius: 0;
   -moz-border-radius: 0;
@@ -799,39 +822,24 @@ input[type="button"],
 input[type="reset"],
 .button,
 .btn {
-  border: 0 !important;
-  border-top: #eaf2f3 1px solid;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  border: 1px solid #d5d5d5;
   cursor: pointer;
-  color: #4a757f;
-  font-family: 'Open Sans Condensed', Arial, sans-serif;
+  color: #333;
+  font-family: Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
-  height: 27px;
+  height: 25px;
+  line-height: 25px;
   margin-right: 10px;
+  padding: 0 2px 0 2px;
   text-align: center;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #c6d9dd;
-  -moz-text-shadow: 0px 1px 0px #c6d9dd;
-  -webkit-text-shadow: 0px 1px 0px #c6d9dd;
-  background-color: #d1e2e5;
-  background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#d1e2e5), color-stop(25%, #d1e2e5), to(#a9c2c7));
-  background-image: -webkit-linear-gradient(#d1e2e5, #d1e2e5 25%, #a9c2c7);
-  background-image: -moz-linear-gradient(top, #d1e2e5, #d1e2e5 25%, #a9c2c7);
-  background-image: -ms-linear-gradient(#d1e2e5, #d1e2e5 25%, #a9c2c7);
-  background-image: -o-linear-gradient(#d1e2e5, #d1e2e5 25%, #a9c2c7);
-  background-image: linear-gradient(#d1e2e5, #d1e2e5 25%, #a9c2c7);
-  border-radius: 4px;
-  -ms-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -khtml-border-radius: 4px;
-  -webkit-box-shadow: 1px 1px 2px #636363;
-  -moz-box-shadow: 1px 1px 2px #636363;
-  box-shadow: 1px 1px 2px #636363;
+  background-color: #f5f5f5;
+  border-radius: 3px;
+  -ms-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
 }
 button:focus,
 input[type="submit"]:focus,
@@ -856,18 +864,8 @@ input[type="submit"]:hover,
 .button:hover,
 .btn:hover {
   background-position: 0 0 !important;
-  background-color: #cde5e9;
-  background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cde5e9), color-stop(25%, #cde5e9), to(#94b3ba));
-  background-image: -webkit-linear-gradient(#cde5e9, #cde5e9 25%, #94b3ba);
-  background-image: -moz-linear-gradient(top, #cde5e9, #cde5e9 25%, #94b3ba);
-  background-image: -ms-linear-gradient(#cde5e9, #cde5e9 25%, #94b3ba);
-  background-image: -o-linear-gradient(#cde5e9, #cde5e9 25%, #94b3ba);
-  background-image: linear-gradient(#cde5e9, #cde5e9 25%, #94b3ba);
+  background-color: #ddd;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #c6d9dd;
-  -moz-text-shadow: 0px 1px 0px #c6d9dd;
-  -webkit-text-shadow: 0px 1px 0px #c6d9dd;
 }
 .user-profile-page input[name="send_message"] {
   margin: 10px 0 20px;
@@ -915,23 +913,6 @@ form.ajax-file-upload img.spinner {
   bottom: 6px;
   left: 10px;
 }
-#askYourQuestion{
-  width: auto;
-  float: left;
-}
-#askButton {
-  /* check blocks/secondary_header.html and widgets/ask_button.html*/
-  font-size: 14px;
-  font-weight: bold;
-  color: #ffffff;
-  height: 38px;
-  line-height: 38px;
-  margin: 5px;
-  padding: 5px;
-  border-radius: 5px;
-  background: #73a550;
-  /* to match width of sidebar */
-}
 .search-drop-menu {
   width: 100%;
 }
@@ -959,6 +940,9 @@ form.ajax-file-upload img.spinner {
 .box {
   background: #fff;
   padding: 4px 2px 10px 2px;
+  margin: 10px 0 10px 0;
+  /*border: 2px solid #ccc;
+  border-radius: 3px;*/
   width: 100%;
   overflow: hidden;
   box-sizing: border-box;
@@ -980,39 +964,40 @@ form.ajax-file-upload img.spinner {
   margin: 0;
 }
 .box h2 {
-  padding-left: 0;
-  background: #eceeeb;
-  line-height: 30px;
-  text-align: right;
-  font-size: 18px !important;
-  font-weight: normal;
-  color: #656565;
+  width: 190px;
   padding-right: 10px;
   margin-bottom: 10px;
-  font-family: Arial,'Helvetica','sans-serif';
-  width: 190px;
+  border-bottom:1px solid #ccc; 
+  line-height: 30px;
+  text-align: left;
+  font-size: 24px !important;
+  font-weight: normal;
+  color: #555;
+  font-family: 'Myriad Pro Light',Arial,Helvetica,sans-serif;
 }
 .box h3 {
-  color: #4a757f;
-  font-size: 18px;
+  color: #555;
+  font-size: 24px;
   text-align: left;
   font-weight: normal;
-  font-family: Arial,'Helvetica','sans-serif';
+  font-family: 'Myriad Pro Light',Arial,Helvetica,sans-serif;
   padding-left: 0px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
 }
 .box .contributorback {
-  background: #eceeeb url(../images/contributorsback.png) no-repeat center left;
+  /*background: #eceeeb url(../images/contributorsback.png) no-repeat center left;*/
 }
 .box form {
   margin: 0px;
 }
 .box label {
-  color: #707070;
-  font-size: 15px;
+  color: #555;
+  font-size: 13px;
   vertical-align: bottom;
   display: inline;
   text-align: left;
-  font-family: 'Open Sans Condensed', Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 .box #displayTagFilterControl label, .box #emailTagFilterControl label {
   /*Especial width just for the tag filter boxes in index page*/
@@ -1140,18 +1125,17 @@ form.ajax-file-upload img.spinner {
 }
 /* ----- Sorting top Tab, check main_page/tab_bar.html ------*/
 .tabBar {
-  background-color: #eff5f6;
-  height: 30px;
-  margin-bottom: 3px;
-  margin-top: 3px;
+  background-color: #f5f5f5;
+  height: 26px;
+  margin: 5px 5px 5px 5px;
   float: right;
-  font-family: Georgia, serif;
-  font-size: 16px;
-  border-radius: 5px;
-  -ms-border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  border-radius: 0px;
+  /*-ms-border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  -khtml-border-radius: 5px;
+  -khtml-border-radius: 5px;*/
 }
 .tabBar h2 {
   float: left;
@@ -1160,7 +1144,7 @@ form.ajax-file-upload img.spinner {
   float: right;
   position: relative;
   display: block;
-  height: 20px;
+  height: 26px;
 }
 /* tabsA - used for sorting */
 .tabsA {
@@ -1170,28 +1154,31 @@ form.ajax-file-upload img.spinner {
   float: left;
 }
 .tabsA a, .tabsC a {
-  border-left: 1px solid #d0e1e4;
-  color: #7ea9b3;
+  border-left: 1px solid #fff;
+  color: #333;
   display: block;
   float: left;
-  height: 20px;
-  line-height: 20px;
-  padding: 4px 7px 4px 7px;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 5px 0 5px;
   text-decoration: none;
 }
 .tabsA a.on,
 .tabsC a.on,
 .tabsA a:hover,
 .tabsC a:hover {
-  color: #4a757f;
+  color: #333;
+  background: #ddd;
 }
 .tabsA .label, .tabsC .label {
   float: left;
-  color: #646464;
-  margin: 4px 5px 0px 8px;
+  color: #333;
+  margin: 0px 5px 0px 5px;
 }
 .main-page .tabsA .label {
-  margin-left: 8px;
+  margin-left: 5px;
+  height: 26px;
+  line-height: 26px;
 }
 .tabsB a {
   background: #eee;
@@ -1209,18 +1196,16 @@ form.ajax-file-upload img.spinner {
   border: none;
 }
 .rss {
-  float: right;
-  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
   color: #f57900;
-  margin: 5px 0px 3px 7px;
-  width: 52px;
-  padding-left: 2px;
-  padding-top: 3px;
-  background: url(../images/feed-icon-small.png) no-repeat center right;
+  margin: 5px 5px 0 0;
+  padding: 0;
+  width: 15px;
   float: right;
-  font-family: Georgia, serif;
-  font-size: 16px;
   clear: both;
+  /*background: url(../images/feed-icon-small.png) no-repeat center right;
+  background-size: 13px;*/
 }
 .rss:hover {
   color: #F4A731 !important;
@@ -1228,12 +1213,18 @@ form.ajax-file-upload img.spinner {
 /* ----- Headline, containing number of questions and tags selected, check main_page/headline.html ----- */
 #questionCount {
   font-weight: bold;
-  font-size: 20px;
-  color: #7ea9b3;
+  font-size: 26px;
+  color: #222;
   float: left;
   margin-bottom: 6px;
   padding-top: 6px;
-  font-family: 'Open Sans Condensed', Arial, sans-serif;
+  font-family: sans-serif,Arial;
+}
+#questionCount-2 {
+  font-weight: bold;
+  font-size: 13px;
+  color: #000;
+  font-family: sans-serif,Arial;
 }
 #listSearchTags {
   margin-top: 3px;
@@ -1297,6 +1288,7 @@ ul#searchTags {
   color: #464646;
 }
 .short-summary .userinfo {
+  float: right;
   text-align: right;
   line-height: 16px;
   font-family: Arial;
@@ -1313,75 +1305,96 @@ ul#searchTags {
   font-size: 11px;
 }
 .short-summary .counts {
-  float: right;
+  float: left;
   margin: 4px 0 0 5px;
-  font-family: 'Open Sans Condensed', Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 .short-summary .counts .item-count {
   padding: 0px 5px 0px 5px;
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Open Sans Condensed', Arial, sans-serif;
 }
+
+.short-summary .counts .answers div,
 .short-summary .counts .votes div,
 .short-summary .counts .views div,
-.short-summary .counts .answers div,
 .short-summary .counts .favorites div {
   margin-top: 3px;
-  font-size: 14px;
-  line-height: 14px;
-  color: #646464;
+  font-size: 13px;
+  line-height: 13px;
+  color: #666;
 }
+.short-summary .counts .views div{
+  color: #888;
+}
+.short-summary .counts .answers div{
+  color: #fff;
+}
+
 .short-summary .tags {
   margin: 0 0 0 1px;
 }
-.short-summary .votes,
 .short-summary .answers,
+.short-summary .votes,
 .short-summary .favorites,
 .short-summary .views {
   text-align: center;
   margin: 0 3px;
   padding: 8px 2px 0px 2px;
-  width: 51px;
+  width: 46px;
   float: right;
-  height: 44px;
-  border: #dbdbd4 1px solid;
+  height: 42px;
+  border: #ccc 2px solid;
 }
 .short-summary .votes {
-  /*background: url(../images/vote-background.png) repeat-x;*/
   border-radius: 5px;
 }
 .short-summary .answers {
-  /*background: url(../images/answers-background.png) repeat-x;*/
+  border: #c0462e 1px solid;  
   border-radius: 5px;
+  background-color:#c0462e;
+  color: white;
+  font-size: 13px;
 }
 .short-summary .views {
-  /*background: url(../images/view-background.png) repeat-x;*/
   border-radius: 5px;
+  border: 0;
 }
+
 .short-summary .no-votes .item-count {
-  color: #b1b5b6;
+  color: #666666;
 }
 .short-summary .some-votes .item-count {
-  color: #4a757f;
+  color: #666666;
 }
 .short-summary .no-answers .item-count {
-  color: #b1b5b6;
+  /*color: #b1b5b6;*/
+  color: white;
 }
 .short-summary .some-answers .item-count {
-  color: #eab243;
+  /*color: #eab243;*/
+  color: white;
+}
+.short-summary .some-answers {
+  background-color: #73a550;
+  border: #73a550 1px solid;  
 }
 .short-summary .no-views .item-count {
-  color: #b1b5b6;
+  color: #888888;
 }
 .short-summary .some-views .item-count {
-  color: #d33f00;
+  color: #888888;
 }
 .short-summary .accepted .item-count {
   background: url(../images/accept.png) no-repeat top right;
   display: block;
   text-align: center;
   width: 40px;
-  color: #eab243;
+  color: #fff;
+}
+.short-summary .accepted{
+  background-color: #48712b;
+  border: #48712b 1px solid;
 }
 .short-summary .some-favorites .item-count {
   background: #338333;
@@ -1510,7 +1523,7 @@ ul.tags, ul.tags.marked-tags, ul.js-related-tags {
 ul.tags li {
   float: left;
   display: block;
-  margin: 0 8px 8px 0;
+  margin: 0 0px 8px 0;
   padding: 0;
   height: 20px;
 }
@@ -1522,6 +1535,8 @@ ul.tags.marked-tags li, .wildcard-tags ul.tags li {
 }
 #tagSelector div.inputs {
   margin: 6px 0 12px 0;
+  height: 25px;
+  line-height: 25px;
 }
 .tags-page ul.tags li, ul#ab-user-tags li {
   width: 160px;
@@ -1562,26 +1577,24 @@ ul.js-related-tags li {
   vertical-align: text-top;
 }
 .js-tag-name {
-  cursor: pointer;
-  background: #f3f6f6;
-  border: #fff 1px solid ;
-  border-top: #fff 2px solid;
-  outline: #cfdbdb 1px solid !important;
-  -webkit-box-shadow: 0px 0px 5px #d3d6d7;
-  -moz-box-shadow: 0px 0px 5px #d3d6d7;
-  box-shadow: 0px 0px 5px #d3d6d7;
-  display: inline-block;
-  height: 17px;
-  line-height: 17px;
-  font-weight: normal;
-  font-size: 11px;
-  padding: 0px 8px 0px 8px;
-  text-decoration: none;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  font-family: Arial;
-  color: #717179;
+  -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #eeeeee;
+    border-color: #f5f5f5 #cccccc #cccccc #f5f5f5;
+    border-image: none;
+    border-radius: 3px;
+    border-right: 1px solid #cccccc;
+    border-style: solid;
+    border-width: 1px;
+    color: #555555;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-right: 2px;
+    margin-top: 4px;
+    padding: 2px 6px;
 }
 .js-deletable-tag {
   margin-right: 3px;
@@ -3478,24 +3491,26 @@ body.question-page ins, body.main-page ins {
 /* ----- Footer links , check blocks/footer.html----- */
 #ground {
   width: 100%;
+  height: 100px;
+  line-height: 100px;
   clear: both;
-  border-top: 1px solid #000;
-  padding: 16px 0 0 0;
-  background: #16160f;
-  font-size: 16px;
-  font-family: 'Open Sans Condensed', Arial, sans-serif;
+  border-top: 1px solid #ccc;
+  margin: 10px 0 10px 0;
+  padding: 10px;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
 }
 #ground p {
   margin-bottom: 0;
 }
 .footer-links {
   color: #EEE;
-  text-align: left;
+  text-align: right;
   width: 450px;
-  float: left;
+  float: right;
 }
 .footer-links a {
-  color: #e7e8a8;
+  color: #4183c4;
 }
 .powered-link {
   width: 450px;
@@ -3503,16 +3518,16 @@ body.question-page ins, body.main-page ins {
   text-align: left;
 }
 .powered-link a {
-  color: #8ebcc7;
+  color: #4183c4;
 }
 .copyright {
-  color: #616161;
+  color: #777;
   width: 500px;
-  float: right;
-  text-align: right;
+  float: left;
+  text-align: left;
 }
 .copyright a {
-  color: #8ebcc7;
+  color: #4183c4;
 }
 .copyright img.license-logo {
   margin: 6px 0px 20px 10px;

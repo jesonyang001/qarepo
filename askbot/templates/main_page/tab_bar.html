@@ -12,13 +12,13 @@
     href="/feeds/rss/"
     {% endif %}
     title="{% trans %}subscribe to the feed{% endtrans %}"
-    >{% trans %}RSS{% endtrans %}
+    ><img src="{{"/images/feed-icon-small.png"|media}}" width="15" height="15" border="0" alt="" />
 </a>
 {% endif %}
 
 <div class="tabBar">
     <div id="sort_tabs" class="tabsA">
-        <span class="label">{% trans %}Sort by &raquo;{% endtrans %}</span>
+        <span class="label">{% trans %}sort by &raquo;{% endtrans %}</span>
         {% if show_sort_by_relevance %}
             {% set asc_relevance_tooltip = gettext('most relevant questions') %}
             {% set desc_relevance_tooltip = gettext('click to see most relevant questions') %}

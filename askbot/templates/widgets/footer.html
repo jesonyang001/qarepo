@@ -17,7 +17,7 @@
                 {{settings.APP_COPYRIGHT}} {% trans 
                     license_title=settings.LICENSE_TITLE,
                     license_url=settings.LICENSE_URL
-                %}Content on this site is licensed under a <a href="{{license_url}}">{{license_title}}</a> license.{% endtrans %}
+                %}All contents licensed under <a href="{{license_url}}">{{license_title}}</a> license.{% endtrans %}
 
             </div>
             {% else %}
@@ -40,7 +40,6 @@
             <a href="{% url help %}" title="{% trans %}help{% endtrans %}">{% trans %}help{% endtrans %}</a>
             <span class="link-separator"> |</span>
             <a href="{% url privacy %}">{% trans %}privacy policy{% endtrans %}</a><span class="link-separator"> |</span>
-            <a href="{% url terms %}">{% trans %}terms of service{% endtrans %}</a><span class="link-separator"> |</span>
             {% spaceless %}
             <a href=
                         {% if settings.FEEDBACK_SITE_URL %}
@@ -51,13 +50,13 @@
                         {% endif %}
                         {% trans %}give feedback{% endtrans %}
                     </a>
-                    {% endspaceless %}
+            {% endspaceless %}
         </div>
-        <div class="powered-link">
+       <!-- <div class="powered-link">
             <a href="http://askbot.com" target="_blank">
                 Powered by Askbot version {{settings.ASKBOT_VERSION}}
             </a>
-        </div>
+        </div> -->
         <div class="clean"></div>
     </div>
 </div>

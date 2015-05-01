@@ -29,6 +29,17 @@ settings.register(
 settings.register(
     values.StringValue(
         WORDS,
+        'WORDS_NEW_QUESTION',
+        default=_('+ New Question'),
+        description=_('+ New Question'),
+        help_text=_('Used on a button'),
+        localized=True
+    )
+)
+
+settings.register(
+    values.StringValue(
+        WORDS,
         'WORDS_PLEASE_ENTER_YOUR_QUESTION',
         default=_('Please enter your question'),
         description=_('Please enter your question'),
@@ -1000,8 +1011,8 @@ settings.register(
     values.StringValue(
         WORDS,
         'WORDS_UNANSWERED',
-        default = _('UNANSWERED'),
-        description = _('UNANSWERED'),
+        default = _('Unanswered'),
+        description = _('Unanswered'),
         localized=True
     )
 )

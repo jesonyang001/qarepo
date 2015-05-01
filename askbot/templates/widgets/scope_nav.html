@@ -9,7 +9,7 @@
         {% if settings.ALL_SCOPE_ENABLED %}
         <a class="scope-selector {% if scope == 'all' %}on{% endif %}"
             href="{{ search_state.change_scope('all').full_url() }}"
-        >{% trans %}ALL{% endtrans %}</a>
+        >{% trans %}All{% endtrans %}</a>
         {% endif %}
 
         {% if settings.UNANSWERED_SCOPE_ENABLED %}
@@ -21,7 +21,7 @@
         {% if request.user.is_authenticated() and settings.FOLLOWED_SCOPE_ENABLED %} 
         <a class="scope-selector {% if scope == 'followed' %}on{% endif %}"
             href="{{ search_state.change_scope('followed').full_url() }}"
-        >{% trans %}FOLLOWED{% endtrans %}</a>
+        >{% trans %}Followed{% endtrans %}</a>
         {% endif %}
 
     {% else %}
