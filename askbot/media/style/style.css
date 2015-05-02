@@ -561,15 +561,18 @@ body.user-messages {
 .scope-selector {
   font-size: 24px;
   font-family: "Myriad Pro Light",Arial,Helvetica,sans-serif;
-  color: #555555;
+  color: #555;
   text-transform: capitalize;
   height: 38px;
   line-height: 38px;
   margin: 0px;
-  padding: 5px;
+  padding: 0 5px;
+  border-left: 1px solid #fff;
+  background-color: #f5f5f5;
 }
-.scope-selector.on {
-  color: #333;
+.scope-selector.on, .scope-selector:hover {
+  background-color: #ddd;
+  color: #555;
 }
 .scope-selector.ask-message {
   font-size: 24px;
@@ -1574,27 +1577,20 @@ ul.js-related-tags li {
 }
 .js-tag-extra-content {
   padding-left: 4px;
-  vertical-align: text-top;
+  vertical-align: middle;
 }
 .js-tag-name {
-  -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    background-color: #eeeeee;
-    border-color: #f5f5f5 #cccccc #cccccc #f5f5f5;
-    border-image: none;
-    border-radius: 3px;
-    border-right: 1px solid #cccccc;
-    border-style: solid;
-    border-width: 1px;
-    color: #555555;
-    font-size: 11px;
-    font-weight: 400;
-    line-height: 16px;
-    margin-right: 2px;
-    margin-top: 4px;
-    padding: 2px 6px;
+    background-color: #eee;
+    border-radius: 0;
+    color: #333;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 2px 2px 2px 0;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
 }
 .js-deletable-tag {
   margin-right: 3px;
@@ -1605,7 +1601,7 @@ ul.js-related-tags li {
   text-decoration: none;
 }
 .tags a:hover {
-  color: #1A1A1A;
+  background-color: #ddd;
 }
 .users-page th,
 .tags-page th,
@@ -1678,19 +1674,19 @@ ul.js-related-tags li {
   height: 21px;
   width: 18px;
   display: inline-block;
-  line-height: 20px;
+  line-height: 21px;
   text-align: center;
-  background: #bbcdcd;
+  background: #888;
   cursor: default;
   color: #fff;
-  border-top: #cfdbdb 1px solid;
+  font-size: 14px;
   font-family: Arial;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-  -moz-border-radius-topright: 4px;
-  -moz-border-radius-bottomright: 4px;
-  -webkit-border-bottom-right-radius: 4px;
-  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
   text-shadow: 0px 1px 0px #7ea0a0;
   -moz-text-shadow: 0px 1px 0px #7ea0a0;
   -webkit-text-shadow: 0px 1px 0px #7ea0a0;
@@ -1708,8 +1704,8 @@ ul.js-related-tags li {
 .tag-number {
   font-weight: normal;
   float: left;
-  font-size: 16px;
-  color: #5d5d5d;
+  font-size: 13px;
+  color: #777;
 }
 .badges .tag-number {
   float: none;

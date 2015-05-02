@@ -2,9 +2,7 @@
 {% if questions_count > 0 %}
         <h1 id="questionCount" class="search-result-summary">
             {{ questions_count|intcomma }} 
-            <h2 id="questionCount-2">
-                {{ settings.WORDS_QUESTIONS_COUNTABLE_FORMS|py_pluralize(questions_count) }}
-            </h2>
+            {{ settings.WORDS_QUESTIONS_COUNTABLE_FORMS|py_pluralize(questions_count) }}
         {% if author_name %}
             {% trans %}with {{author_name}}'s contributions{% endtrans %}
         {% endif %}
