@@ -1,9 +1,5 @@
-{% if active_tab != "ask" %}
 {% spaceless %}
-<div 
-    id="searchBar"
-    class="search-bar{% if query %} cancelable{% endif %}"
->
+<div id="searchBar" class="search-bar" >
     {# url action depends on which tab is active #}
     {% if active_tab == "tags" %}
         <input type="hidden" name="t" value="tag"/>
@@ -17,15 +13,17 @@
         autocomplete="off"
         value="{{ query|default_if_none('')|escape }}" 
         name="query" 
+
         {% if active_tab == "tags" %}
             placeholder="{% trans %}search tag{% endtrans %}"
         {% elif active_tab == "users" %}
             placeholder="{% trans %}search user{% endtrans %}"
+        {% else %}
+            placeholder="{% trans %}search question{% endtrans %}"        
         {% endif %}
-        placeholder="{% trans %}search question{% endtrans %}"
+
         id="keywords"
     />
     <input type="submit" value="" name="search" class="searchBtn" />
 </div>
 {% endspaceless %}
-{% endif %}

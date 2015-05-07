@@ -112,11 +112,13 @@
     $(document).ready(function(){
         // focus input on the search bar endcomment
         var activeTab = askbot['data']['activeTab'];
-        if (inArray(activeTab, ['users', 'questions', 'tags', 'badges'])) {
+        if (inArray(activeTab, ['users', 'questions', 'tags', 'badges']) != -1) {
             var searchInput = $('#keywords');
-        } else if (activeTab === 'ask') {
+        }
+        else if (activeTab === 'ask') {
             var searchInput = $('#id_title');
-        } else {
+        } 
+        else {
             var searchInput = undefined;
             animateHashes();
         }
@@ -126,9 +128,11 @@
             putCursorAtEnd(searchInput);
         }
 
-        var haveFullTextSearchTab = inArray(activeTab, ['questions', 'badges', 'ask']);
-        var haveUserProfilePage = $('body').hasClass('user-profile-page');
-        if ((haveUserProfilePage || haveFullTextSearchTab) && searchInput.length) {
+        var haveFullTextSearchTab = inArray(activeTab, ['questions', 'badges', 'ask', 'settings']);
+        //var haveUserProfilePage = $('body').hasClass('user-profile-page');
+        var haveMeta = $('body').hasClass('meta');
+        var haveWidgets = $('body').hasClass('widgets');
+        if ((haveWidgets || haveMeta || haveFullTextSearchTab) && searchInput.length) {
             var search = new FullTextSearch();
             askbot['controllers'] = askbot['controllers'] || {};
             askbot['controllers']['fullTextSearch'] = search;
@@ -137,7 +141,8 @@
                 search.setAskButtonEnabled(false);
             }
             search.decorate(searchInput);
-        } else if (activeTab === 'tags') {
+        } 
+        else if (activeTab === 'tags') {
             var search = new TagSearch();
             search.decorate(searchInput);
         }

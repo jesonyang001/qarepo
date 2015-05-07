@@ -59,6 +59,8 @@ def group_settings(request, group, template='livesettings/group_settings.html'):
         form = None
 
     return render_to_response(template, {
+	'active_tab' : 'settings',#By Yang
+	'page_class' : 'settings-page',#By Yang
         'all_super_groups': mgr.get_super_groups(),
         'title': title,
         'settings_group' : settings,
