@@ -78,7 +78,8 @@ def run_full_text_search(query_set, query_text, text_search_vector_name):
 
     search_query = '|'.join(query_text.split())#apply "OR" operator
     language_name = LANGUAGE_NAMES.get(language_code, 'english')
-    extra_params = (language_name, search_query,)
+    #extra_params = (language_name, search_query)
+    extra_params = ('simple', search_query)#By Yang
     extra_kwargs = {
         'select': {'relevance': rank_clause},
         'where': [where_clause,],

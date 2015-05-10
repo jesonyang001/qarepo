@@ -25,16 +25,16 @@ BEGIN
 
     tsv = to_tsvector('');
     FOR onerow in EXECUTE group_query LOOP
-        tsv = tsv || to_tsvector(onerow.group_name);
+        tsv = tsv || to_tsvector('simple',onerow.group_name);
     END LOOP;
 
     user_query = 'SELECT about, username, real_name, email FROM auth_user WHERE id=' || user_id;
     FOR onerow in EXECUTE user_query LOOP
         tsv = tsv || 
-            to_tsvector(onerow.username) || 
-            to_tsvector(onerow.real_name) ||
-            to_tsvector(onerow.email) ||
-            to_tsvector(onerow.about);
+            to_tsvector('simple',onerow.username) || 
+            to_tsvector('simple',onerow.real_name) ||
+            to_tsvector('simple',onerow.email) ||
+            to_tsvector('simple',onerow.about);
     END LOOP;
     RETURN tsv;
 END;

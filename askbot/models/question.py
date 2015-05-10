@@ -283,7 +283,8 @@ class ThreadManager(BaseQuerySetManager):
                 )
             elif 'postgresql_psycopg2' in askbot.get_database_engine_name():
                 from askbot.search import postgresql
-                return postgresql.run_thread_search(qs, search_query)
+    #            return postgresql.run_thread_search(qs, search_query)
+                return postgresql.run_title_search(qs, search_query)
             else:
                 return qs.filter(
                     models.Q(title__icontains=search_query) |
