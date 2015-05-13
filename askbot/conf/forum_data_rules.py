@@ -495,7 +495,7 @@ settings.register(
     livesettings.IntegerValue(
         FORUM_DATA_RULES,
         'MIN_SEARCH_WORD_LENGTH',
-        default=4,
+        default=1,
         description=_('Minimum length of search term for Ajax search'),
         help_text=_('Must match the corresponding database backend setting'),
     )
