@@ -117,7 +117,7 @@ RETURNS tsvector AS
 $$
 BEGIN
     /* todo add weight depending on votes */
-    RETURN  setweight(to_tsvector('simple', coalesce(title, '')), 'A');
+    RETURN  setweight(to_tsvector('testzhcfg', coalesce(title, '')), 'A');
 	    /*|| setweight(to_tsvector('simple', coalesce(tagnames, '')), 'A');*/
 END;
 $$ LANGUAGE plpgsql;
@@ -130,12 +130,12 @@ $$
 BEGIN
     /* todo adjust weights to reflect votes */
     IF post_type='question' THEN
-        RETURN setweight(to_tsvector('simple',coalesce(text, '')), 'B');
+        RETURN setweight(to_tsvector('testzhcfg',coalesce(text, '')), 'B');
     ELSIF post_type='answer' THEN
         /* todo reflect whether the answer acepted or has many points */
-        RETURN setweight(to_tsvector('simple',coalesce(text, '')), 'C');
+        RETURN setweight(to_tsvector('testzhcfg',coalesce(text, '')), 'C');
     ELSIF post_type='comment' THEN
-        RETURN setweight(to_tsvector('simple',coalesce(text, '')), 'D');
+        RETURN setweight(to_tsvector('testzhcfg',coalesce(text, '')), 'D');
     ELSE
         RETURN to_tsvector('');
     END IF;

@@ -665,10 +665,10 @@ body.user-messages {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   background: whitesmoke;
-  border-top: none;
+  border-radius: 3px;
   top: 42px;
   margin: 0;
-  outline: 1px solid #dadad4;
+  border: 1px solid #dadad4;
   position: absolute;
   z-index: 10000;
 }
@@ -683,16 +683,21 @@ body.user-messages {
 .search-drop-menu ul li {
   padding: 5px 10px;
   position: relative;
+  border-bottom: 1px solid #dadad4;
 }
 .search-drop-menu ul li a {
   text-decoration: none;
+  color: #73a550;
 }
-.search-drop-menu ul li.selected {
-  background: #08c;
+.search-drop-menu ul li.selected,
+.search-drop-menu ul li:hover {
+  background: #73a550;
 }
-.search-drop-menu ul li.selected a {
-  color: whitesmoke;
+.search-drop-menu ul li.selected a,
+.search-drop-menu ul li:hover a {
+  color: #fff;
 }
+
 .search-drop-menu .footer {
   text-align: center;
   margin: 0 0 1px 0;

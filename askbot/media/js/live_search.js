@@ -44,7 +44,8 @@ SearchDropMenu.prototype.render = function () {
     if (this._data.length === 0) {
         list.addClass('empty');
         this._element.addClass('empty');
-    } else {
+    } 
+    else {
         list.removeClass('empty');
         this._element.removeClass('empty');
     }
@@ -213,15 +214,15 @@ SearchDropMenu.prototype.createDom = function () {
     this._element.append(footer);
     this._footer = footer;
 
-    if (this._askButtonEnabled) {
-        footer.addClass('footer');
-        var button = this.makeElement('button');
-        button.addClass('submit btn btn-default');
-        button.html(gettext('Ask Your Question'));
-        footer.append(button);
-        var handler = this._askHandler;
-        setupButtonEventHandlers(button, handler);
-    }
+ //   if (this._askButtonEnabled) {
+ //       footer.addClass('footer');
+ //       var button = this.makeElement('button');
+ //       button.addClass('submit btn btn-default');
+ //       button.html(gettext('Ask Your Question'));
+ //       footer.append(button);
+ //       var handler = this._askHandler;
+//        setupButtonEventHandlers(button, handler);
+ //   }
 
     $(document).keydown(this.makeKeyHandler());
 };
