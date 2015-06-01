@@ -44,6 +44,7 @@ SearchDropMenu.prototype.render = function () {
     if (this._data.length === 0) {
         list.addClass('empty');
         this._element.addClass('empty');
+        list.html('<b>No results.</b>');
     } 
     else {
         list.removeClass('empty');
@@ -117,9 +118,11 @@ SearchDropMenu.prototype.makeKeyHandler = function () {
             me.hide();
             return false;
         }
+
         if (keyCode !== 38 && keyCode !== 40 && keyCode !== 13) {
             return;
         }
+
         var itemCount = me.getItemCount();
         if (itemCount > 0) {
             //count is 0 with no title matches, curItem is 0 when none is selected
@@ -128,25 +131,35 @@ SearchDropMenu.prototype.makeKeyHandler = function () {
                 if (curItem > 0) {
                     curItem = curItem - 1;
                 }
-            } else if (keyCode === 40) {//downArrow
+                else{
+                    curItem = itemCount;
+                }
+            } 
+            else if (keyCode === 40) {//downArrow
                 if (curItem < itemCount) {
                     curItem = curItem + 1;
                 }
-            } else if (keyCode === 13) {//enter
+                else{
+                    curItem = 0;
+                }
+            } 
+            else if (keyCode === 13) {//enter
                 if (curItem === 0) {
                     return true;
-                } else {
+                } 
+                else {
                     me.navigateToItem(curItem);
                     return false;
                 }
-            }
+            } 
 
             var widget = me.getSearchWidget();
             if (curItem === 0) {
                 //activate key handlers on input box
                 widget.setFullTextSearchEnabled(true);
                 me.clearSelectedItem();
-            } else {
+            } 
+            else {
                 //deactivate key handlers on input box
                 widget.setFullTextSearchEnabled(false);
                 me.selectItem(curItem);
@@ -224,7 +237,7 @@ SearchDropMenu.prototype.createDom = function () {
 //        setupButtonEventHandlers(button, handler);
  //   }
 
-    $(document).keydown(this.makeKeyHandler());
+    $(":input").keydown(this.makeKeyHandler());
 };
 
 SearchDropMenu.prototype.isOpen = function () {
@@ -242,6 +255,16 @@ SearchDropMenu.prototype.show = function () {
         'max-height',
         windowHeight - topOffset - footerHeight - 40 //what is this number?
     );
+
+    var me = this;
+    $("div.search-drop-menu ul li").mouseenter(function(){
+        var curItem = $("li").index(this);
+        curItem = curItem - 1;
+        me.selectItem(curItem);
+        });
+    $("div.search-drop-menu ul li").mouseleave(function(){
+        me.clearSelectedItem();
+        });
 };
 
 SearchDropMenu.prototype.hide = function () {

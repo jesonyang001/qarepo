@@ -754,7 +754,8 @@ def api_get_questions(request):
         threads = threads.get_for_title_query(query)
 
     #todo: filter out deleted threads, for now there is no way
-    threads = threads.distinct()[:30]
+    #https://docs.djangoproject.com/en/dev/ref/models/querysets/
+    threads = threads.order_by('-added_at').distinct()[:5]
 
     thread_list = list()
     for thread in threads:#todo: this is a temp hack until thread model is fixed

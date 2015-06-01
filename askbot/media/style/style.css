@@ -599,7 +599,7 @@ body.user-messages {
   z-index: 1000;
   position: relative;
   height: 30px;
-  width: 333px;
+  width: 368px;
   margin: 15px 0 15px 0;
   float: left;
 
@@ -660,41 +660,46 @@ body.user-messages {
   right: 13px;
   top: 0;
 }
+
 .search-drop-menu {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  background: whitesmoke;
+  background: #f5f5f5;
   border-radius: 3px;
   top: 42px;
   margin: 0;
-  border: 1px solid #dadad4;
+  border: 1px solid #ccc;
   position: absolute;
   z-index: 10000;
 }
 .search-drop-menu ul {
   list-style: none;
-  overflow: auto;
+  /*overflow: auto;*/
+  overflow: visible;
   padding: 0;
   margin: 0;
   position: relative;
   width: 100%;
 }
 .search-drop-menu ul li {
-  padding: 5px 10px;
+  padding: 0px;
   position: relative;
-  border-bottom: 1px solid #dadad4;
+  border-bottom: 1px solid #ccc;
 }
 .search-drop-menu ul li a {
   text-decoration: none;
   color: #73a550;
+  margin: 0px;
+  padding: 5px;
+  display: block;
+  width: 356px;
+  height: 100%;
 }
-.search-drop-menu ul li.selected,
-.search-drop-menu ul li:hover {
+.search-drop-menu ul li.selected{
   background: #73a550;
 }
-.search-drop-menu ul li.selected a,
-.search-drop-menu ul li:hover a {
+.search-drop-menu ul li.selected a{
   color: #fff;
 }
 
@@ -709,6 +714,7 @@ body.user-messages {
 .search-drop-menu.empty ul {
   padding: 1px;
   margin: 0;
+  text-align: center;
 }
 .input-tool-tip {
   color: #999;
@@ -1284,7 +1290,7 @@ ul#searchTags {
 
 }
 .short-summary h2 {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: normal;
   line-height: 26px;
   padding-left: 0;
